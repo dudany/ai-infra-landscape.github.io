@@ -1,0 +1,552 @@
+[
+    {
+    "name": "Langfuse",
+    "link_to_doc_page": "https://docs.langfuse.com/",
+    "type": "open source sdk",
+    "summary": "Open-source observability tool for tracing agent prompts, tool calls, and performance in AI agent workflows.",
+    "category": "Monitoring and Observability",
+    "link_to_github": "https://github.com/langfuse/langfuse",
+    "recent_updates": "2025 updates include agent-specific tracing for multi-step workflows."
+    },
+    {
+    "name": "Arize AI",
+    "link_to_doc_page": "https://docs.arize.com/",
+    "type": "proprietary",
+    "summary": "Platform for monitoring AI agents, including traces, bias detection, and real-time vulnerability detection.",
+    "category": "Monitoring and Observability",
+    "link_to_github": null,
+    "recent_updates": "Enhanced in 2025 for multi-agent systems; integrates with OpenTelemetry."
+    },
+    {
+    "name": "Azure AI Foundry Observability",
+    "link_to_doc_page": "https://learn.microsoft.com/en-us/azure/ai-studio/",
+    "type": "proprietary",
+    "summary": "Unified solution for agent governance, tracing, and monitoring in Azure ecosystems.",
+    "category": "Monitoring and Observability",
+    "link_to_github": null,
+    "recent_updates": "Launched 2025 features for Azure Bedrock agents; emphasizes decentralized security."
+    },
+    {
+    "name": "Dynatrace",
+    "link_to_doc_page": "https://docs.dynatrace.com/",
+    "type": "proprietary",
+    "summary": "AI agent observability platform with integration for Amazon Bedrock and compliance debugging.",
+    "category": "Monitoring and Observability",
+    "link_to_github": null,
+    "recent_updates": "2025 release for agent loops; supports engagement metrics."
+    },
+    {
+    "name": "WhyLabs",
+    "link_to_doc_page": "https://whylabs.ai/docs",
+    "type": "open source sdk",
+    "summary": "Privacy-focused tool for safeguarding AI models and agents across lifecycles.",
+    "category": "Monitoring and Observability",
+    "link_to_github": "https://github.com/whylabs/whylogs",
+    "recent_updates": "2025 updates for agentic AI; ideal for blind storage."
+    },
+    {
+    "name": "Opik",
+    "link_to_doc_page": "https://docs.opik.com/",
+    "type": "proprietary",
+    "summary": "Agent-focused monitoring for multi-step reasoning, tool usage, and LLM observability.",
+    "category": "Monitoring and Observability",
+    "link_to_github": null,
+    "recent_updates": "2025 enhancements; part of top tools for evaluations."
+    },
+    {
+    "name": "AgentOps",
+    "link_to_doc_page": "https://docs.agentops.ai/",
+    "type": "proprietary",
+    "summary": "Leading platform for agent observability with dashboards, alerts, and failure prevention.",
+    "category": "Monitoring and Observability",
+    "link_to_github": null,
+    "recent_updates": "2025 essential stack for production workflows."
+    },
+    {
+    "name": "AutoGen",
+    "link_to_doc_page": "https://microsoft.github.io/autogen/",
+    "type": "open source sdk",
+    "summary": "Multi-agent framework for workflows, planning, and execution with memory and tool chaining.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/microsoft/autogen",
+    "recent_updates": "2025 AG2 release for end-to-end automation."
+    },
+    {
+    "name": "CrewAI",
+    "link_to_doc_page": "https://docs.crewai.com/",
+    "type": "open source sdk",
+    "summary": "Role-based multi-agent framework for task decomposition and team-like behaviors.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/joaomdmoura/crewAI",
+    "recent_updates": "2025 updates for faster orchestration."
+    },
+    {
+    "name": "LangGraph",
+    "link_to_doc_page": "https://langchain-ai.github.io/langgraph/",
+    "type": "open source sdk",
+    "summary": "Graph-based framework for conditional agent loops, state management, and visual debugging.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/langchain-ai/langgraph",
+    "recent_updates": "2025 enhancements for retries in production."
+    },
+    {
+    "name": "Semantic Kernel",
+    "link_to_doc_page": "https://learn.microsoft.com/en-us/semantic-kernel/",
+    "type": "open source sdk",
+    "summary": "Framework for memory and planning in agent execution, integrated with Azure.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/microsoft/semantic-kernel",
+    "recent_updates": "2025 integration for no-paid-API prototyping."
+    },
+    {
+    "name": "OpenAI Swarm / AgentKit",
+    "link_to_doc_page": "https://openai.com/docs/swarm/",
+    "type": "proprietary",
+    "summary": "Lightweight SDK for agent workflows, evaluations, and connectors with node-based builder.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": null,
+    "recent_updates": "Launched October 2025 for fast deployment."
+    },
+    {
+    "name": "Phidata",
+    "link_to_doc_page": "https://docs.phidata.com/",
+    "type": "open source sdk",
+    "summary": "Adaptive agent creation framework with LLM integration and modular flows.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/phidatahq/phidata",
+    "recent_updates": "2025 updates for under 100 lines of code."
+    },
+    {
+    "name": "Mastra",
+    "link_to_doc_page": "https://docs.mastra.com/",
+    "type": "proprietary",
+    "summary": "Framework for complex agent systems with interactive execution and interchangeable frontends.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": null,
+    "recent_updates": "2025 support for interactive execution."
+    },
+    {
+    "name": "Restate",
+    "link_to_doc_page": "https://docs.restate.dev/",
+    "type": "open source sdk",
+    "summary": "Fault-tolerant execution framework for durable AI loops without crashes.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/restatedev/restate",
+    "recent_updates": "2025 release for long-running loops."
+    },
+    {
+    "name": "MetaGPT",
+    "link_to_doc_page": "https://docs.metagpt.com/",
+    "type": "open source sdk",
+    "summary": "Spec-based execution framework with PM/Dev/QA agents for product-thinking workflows.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/geekan/MetaGPT",
+    "recent_updates": "2025 for product-thinking workflows."
+    },
+    {
+    "name": "Superagent / Haystack Agents",
+    "link_to_doc_page": "https://docs.superagent.sh/",
+    "type": "open source sdk",
+    "summary": "Prototyping framework with APIs and RAG-focused execution for fast testing.",
+    "category": "Agent Loop and Execution",
+    "link_to_github": "https://github.com/homanp/superagent",
+    "recent_updates": "2025 open-source for fast testing."
+    },
+    {
+    "name": "MCP (Model Context Protocol)",
+    "link_to_doc_page": "https://modelcontextprotocol.io/",
+    "type": "protocol",
+    "summary": "Open-source standard for connecting AI applications to external systems, enabling seamless data exchange.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": null,
+    "recent_updates": "2025 adoption as internal wiki for agent-tool context sharing."
+    },
+    {
+    "name": "A2A (Agent-to-Agent)",
+    "link_to_doc_page": "https://auth0.com/blog/mcp-vs-a2a/",
+    "type": "protocol",
+    "summary": "Peer-to-peer protocol for coordination and secure enterprise actions between agents.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": null,
+    "recent_updates": "Google-launched 2025 for enterprise."
+    },
+    {
+    "name": "ACP (Agent Communication Protocol)",
+    "link_to_doc_page": "https://onereach.ai/blog/power-of-multi-agent-ai-open-protocols/",
+    "type": "protocol",
+    "summary": "Open standard for agent collaboration, functioning like Slack for agents.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": null,
+    "recent_updates": "IBM 2025; negates filters for flexibility."
+    },
+    {
+    "name": "ANP (Agent Network Protocol)",
+    "link_to_doc_page": "https://onereach.ai/blog/power-of-multi-agent-ai-open-protocols/",
+    "type": "protocol",
+    "summary": "Protocol for networked agent interactions supporting grouping and time-based filtering.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": null,
+    "recent_updates": "2025 open protocol."
+    },
+    {
+    "name": "AG-UI",
+    "link_to_doc_page": "https://onereach.ai/blog/power-of-multi-agent-ai-open-protocols/",
+    "type": "protocol",
+    "summary": "Agent-user interaction protocol standardizing front-ends for interchangeable components.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": null,
+    "recent_updates": "CopilotKit 2025."
+    },
+    {
+    "name": "MCP-Gateway",
+    "link_to_doc_page": "https://agentgateway.dev/",
+    "type": "open source sdk",
+    "summary": "AI-native gateway for connecting, securing, and observing agent-to-agent and agent-to-tool communication using MCP.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": "https://github.com/agentgateway/agentgateway",
+    "recent_updates": "2025 overhaul supporting A2A, MCP, and Kubernetes; open-source project under Linux Foundation."
+    },
+    {
+    "name": "Amazon Bedrock AgentCore Gateway",
+    "link_to_doc_page": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-agentcore-gateway-transforming-enterprise-ai-agent-tool-development/",
+    "type": "proprietary",
+    "summary": "Gateway handling authentication, request routing, and protocol translation between MCP and APIs in AWS ecosystem.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": null,
+    "recent_updates": "Introduced August 2025 for managing multiple targets."
+    },
+    {
+    "name": "Envoy AI Gateway",
+    "link_to_doc_page": "https://aigateway.envoyproxy.io/blog/mcp-implementation/",
+    "type": "open source sdk",
+    "summary": "Gateway with MCP support for secure and flexible connections to external tools and data sources.",
+    "category": "Cross or Multi-Agent Communication Protocols",
+    "link_to_github": "https://github.com/envoyproxy/envoy",
+    "recent_updates": "Announced October 2025 for industry standard adoption."
+    },
+    {
+    "name": "Maxim AI",
+    "link_to_doc_page": "https://docs.maxim.ai/",
+    "type": "proprietary",
+    "summary": "Prompt engineering tool for teams with versioning and governance.",
+    "category": "Prompt Management",
+    "link_to_github": null,
+    "recent_updates": "Top 2025 tool for systematic deployment."
+    },
+    {
+    "name": "LangSmith",
+    "link_to_doc_page": "https://docs.smith.langchain.com/",
+    "type": "proprietary",
+    "summary": "Integrated with LangChain for prompt tracking, evaluations, and optimization.",
+    "category": "Prompt Management",
+    "link_to_github": null,
+    "recent_updates": "2025 updates for agentic prompts."
+    },
+    {
+    "name": "Agenta / Weave",
+    "link_to_doc_page": "https://docs.agenta.ai/",
+    "type": "open source sdk",
+    "summary": "Open-source tools for prompt evaluation and workflows in AI teams.",
+    "category": "Prompt Management",
+    "link_to_github": "https://github.com/Agenta-AI/agenta",
+    "recent_updates": "2025 for reducing manual tweaks."
+    },
+    {
+    "name": "PromptHub",
+    "link_to_doc_page": "https://docs.prompthub.com/",
+    "type": "proprietary",
+    "summary": "Management tool for agentic tasks in customer support.",
+    "category": "Prompt Management",
+    "link_to_github": null,
+    "recent_updates": "2025 for scaling without engineering needs."
+    },
+    {
+    "name": "VKTR",
+    "link_to_doc_page": null,
+    "type": "proprietary",
+    "summary": "Systematic prompt governance tool for scaling.",
+    "category": "Prompt Management",
+    "link_to_github": null,
+    "recent_updates": "2025 top 10 for error-free scaling."
+    },
+    {
+    "name": "Anthropic Context Engineering",
+    "link_to_doc_page": "https://docs.anthropic.com/claude/docs/context-engineering",
+    "type": "proprietary",
+    "summary": "Strategies for curating agent context as a finite resource.",
+    "category": "Context Window Optimization",
+    "link_to_github": null,
+    "recent_updates": "2025 guide for reliability."
+    },
+    {
+    "name": "LangChain Framework",
+    "link_to_doc_page": "https://python.langchain.com/docs/",
+    "type": "open source sdk",
+    "summary": "Four-strategy optimization (Write/Select/Compress/Isolate) for agent memory.",
+    "category": "Context Window Optimization",
+    "link_to_github": "https://github.com/langchain-ai/langchain",
+    "recent_updates": "2025 for blurring context/memory boundaries."
+    },
+    {
+    "name": "Mem0AI",
+    "link_to_doc_page": "https://docs.mem0.ai/",
+    "type": "proprietary",
+    "summary": "Advanced memory tool for agents handling shared states.",
+    "category": "Context Window Optimization",
+    "link_to_github": null,
+    "recent_updates": "2025 stack for no refreshes needed."
+    },
+    {
+    "name": "Galileo / Kubiya",
+    "link_to_doc_page": "https://docs.galileo.ai/",
+    "type": "proprietary",
+    "summary": "Tools for deep context dives in agents with error recovery.",
+    "category": "Context Window Optimization",
+    "link_to_github": null,
+    "recent_updates": "2025 for predictability."
+    },
+    {
+    "name": "Neon Database",
+    "link_to_doc_page": "https://neon.tech/docs",
+    "type": "proprietary",
+    "summary": "Serverless Postgres with RAG for memory architectures.",
+    "category": "Context Window Optimization",
+    "link_to_github": null,
+    "recent_updates": "2025 integrations with vector DBs."
+    },
+    {
+    "name": "Pinecone",
+    "link_to_doc_page": "https://docs.pinecone.io/",
+    "type": "proprietary",
+    "summary": "High-speed vector DB for agents and production RAG.",
+    "category": "Vector DB",
+    "link_to_github": null,
+    "recent_updates": "2025 top for 150 QPS."
+    },
+    {
+    "name": "Qdrant",
+    "link_to_doc_page": "https://qdrant.tech/documentation/",
+    "type": "open source sdk",
+    "summary": "Open-source vector DB for hybrid search in AI assistants.",
+    "category": "Vector DB",
+    "link_to_github": "https://github.com/qdrant/qdrant",
+    "recent_updates": "2025 updates for context/intent handling."
+    },
+    {
+    "name": "Weaviate",
+    "link_to_doc_page": "https://weaviate.io/developers/weaviate",
+    "type": "open source sdk",
+    "summary": "Modular vector DB for large-scale embeddings in business-grade RAG.",
+    "category": "Vector DB",
+    "link_to_github": "https://github.com/weaviate/weaviate",
+    "recent_updates": "2025 for multi-agent memory."
+    },
+    {
+    "name": "Milvus / Chroma",
+    "link_to_doc_page": "https://milvus.io/docs",
+    "type": "open source sdk",
+    "summary": "Scalable open-source vector DBs for decentralized agents.",
+    "category": "Vector DB",
+    "link_to_github": "https://github.com/milvus-io/milvus",
+    "recent_updates": "2025 for cost-efficiency."
+    },
+    {
+    "name": "Vespa / FAISS",
+    "link_to_doc_page": "https://docs.vespa.ai/",
+    "type": "open source sdk",
+    "summary": "AI-focused vector DBs for embeddings in real-world tasks.",
+    "category": "Vector DB",
+    "link_to_github": "https://github.com/vespa-engine/vespa",
+    "recent_updates": "2025 integrations beyond windows."
+    },
+    {
+    "name": "NVIDIA H100/H200/A100",
+    "link_to_doc_page": "https://www.nvidia.com/en-us/data-center/h100/",
+    "type": "proprietary",
+    "summary": "High-performance GPUs for AI workloads, inference, and fine-tuning.",
+    "category": "Compute and GPU Allocation for Inference, Fine-Tuning, and Experimentation",
+    "link_to_github": null,
+    "recent_updates": "2025 top for VRAM in large models."
+    },
+    {
+    "name": "AWS/GCP/Azure Cloud GPUs",
+    "link_to_doc_page": "https://aws.amazon.com/ec2/instance-types/",
+    "type": "proprietary",
+    "summary": "Managed cloud services for on-demand GPU allocation.",
+    "category": "Compute and GPU Allocation for Inference, Fine-Tuning, and Experimentation",
+    "link_to_github": null,
+    "recent_updates": "2025 for instant access; compare with decentralized options."
+    },
+    {
+    "name": "GMI Cloud / Thunder Compute",
+    "link_to_doc_page": "https://gmi.cloud/docs",
+    "type": "proprietary",
+    "summary": "Specialized platforms for AI inference and fine-tuning with H100 access.",
+    "category": "Compute and GPU Allocation for Inference, Fine-Tuning, and Experimentation",
+    "link_to_github": null,
+    "recent_updates": "2025 optimal for teams without lock-in."
+    },
+    {
+    "name": "IO.net / Render",
+    "link_to_doc_page": "https://io.net/docs",
+    "type": "proprietary",
+    "summary": "Decentralized GPU networks for agent demands and limitless power.",
+    "category": "Compute and GPU Allocation for Inference, Fine-Tuning, and Experimentation",
+    "link_to_github": null,
+    "recent_updates": "2025 for onchain agents."
+    },
+    {
+    "name": "Spheron",
+    "link_to_doc_page": "https://docs.spheron.network/",
+    "type": "proprietary",
+    "summary": "Guide and platform for ML GPUs in workflows.",
+    "category": "Compute and GPU Allocation for Inference, Fine-Tuning, and Experimentation",
+    "link_to_github": null,
+    "recent_updates": "2025 for RTX 4090 devs."
+    },
+    {
+    "name": "Apache Spark",
+    "link_to_doc_page": "https://spark.apache.org/docs/latest/",
+    "type": "open source sdk",
+    "summary": "Big data processing tool for agent data distribution and real-time analytics.",
+    "category": "Agent Data Distribution / Map Reduce",
+    "link_to_github": "https://github.com/apache/spark",
+    "recent_updates": "2025 Hadoop alternative."
+    },
+    {
+    "name": "Google BigQuery / Snowflake",
+    "link_to_doc_page": "https://cloud.google.com/bigquery/docs",
+    "type": "proprietary",
+    "summary": "Cloud-based platforms for large datasets and scalable MapReduce in AI agents.",
+    "category": "Agent Data Distribution / Map Reduce",
+    "link_to_github": null,
+    "recent_updates": "2025 for AI agents."
+    },
+    {
+    "name": "AI Map-Reduce (Claude-based)",
+    "link_to_doc_page": null,
+    "type": "proprietary",
+    "summary": "Pattern for scaling AI tasks using MapReduce in headless mode.",
+    "category": "Agent Data Distribution / Map Reduce",
+    "link_to_github": null,
+    "recent_updates": "2025 for large processing."
+    },
+    {
+    "name": "Sentient / Nillion",
+    "link_to_doc_page": "https://docs.sentient.ai/",
+    "type": "proprietary",
+    "summary": "Decentralized tools for agent data with blind compute and multi-agent decomposition.",
+    "category": "Agent Data Distribution / Map Reduce",
+    "link_to_github": null,
+    "recent_updates": "2025 infra."
+    },
+    {
+    "name": "SQD (Onchain Data Lake)",
+    "link_to_doc_page": null,
+    "type": "proprietary",
+    "summary": "Verifiable onchain data lake for AI agent data highways with EigenDA integration.",
+    "category": "Agent Data Distribution / Map Reduce",
+    "link_to_github": null,
+    "recent_updates": "2025 for verifiable data."
+    },
+    {
+    "name": "Okta Auth for Gen AI",
+    "link_to_doc_page": "https://www.okta.com/products/auth-for-gen-ai/",
+    "type": "proprietary",
+    "summary": "Authentication platform for AI agents providing least privileged access to sensitive data and secure API actions.",
+    "category": "Authentication",
+    "link_to_github": null,
+    "recent_updates": "Announced 2025 for developers.",
+    "best_practices": "Zero-trust, scoped access, short-lived tokens."
+    },
+    {
+    "name": "Aembit",
+    "link_to_doc_page": "https://aembit.io/docs/",
+    "type": "proprietary",
+    "summary": "Platform for authenticating AI agents in agentic systems, addressing MCP architecture.",
+    "category": "Authentication",
+    "link_to_github": null,
+    "recent_updates": "2025 guide for authentication in agentic AI.",
+    "best_practices": "Treat agents as first-class identities, multi-factor auth."
+    },
+    {
+    "name": "Kite AI / Proof of AI",
+    "link_to_doc_page": "https://gokite.ai/docs",
+    "type": "proprietary",
+    "summary": "Cryptographically secure transaction layer solving M x N authentication problem for agents and tools.",
+    "category": "Authentication",
+    "link_to_github": null,
+    "recent_updates": "2025 for agent coordination and verification.",
+    "best_practices": "Proof of AI for identity verification, action tracking."
+    },
+    {
+    "name": "Reclaim Protocol",
+    "link_to_doc_page": "https://docs.reclaimprotocol.org/",
+    "type": "open source sdk",
+    "summary": "ZK-TLS protocol for verifiable AI agent actions on blockchain, certifying inference outputs.",
+    "category": "Authentication",
+    "link_to_github": "https://github.com/reclaimprotocol/reclaim-sdk",
+    "recent_updates": "2025 integration with EigenLayer for decentralized zkTLS.",
+    "best_practices": "Verifiable proofs for agent decisions."
+    },
+    {
+    "name": "idOS",
+    "link_to_doc_page": "https://idos.network/docs",
+    "type": "open source sdk",
+    "summary": "Web3 identity system for AI agents, providing verifiable credentials across blockchains.",
+    "category": "Authentication",
+    "link_to_github": "https://github.com/idos-network/idos-sdk",
+    "recent_updates": "2025 for secure agent operations in DAOs and wallets.",
+    "best_practices": "Privacy-preserving proofs, multi-chain support."
+    },
+    {
+    "name": "Expand",
+    "link_to_doc_page": "https://expand.network/docs",
+    "type": "open source sdk",
+    "summary": "Trustless authentication layer using ZK-proofs for secure AI agent data access.",
+    "category": "Authentication",
+    "link_to_github": "https://github.com/expandzk/expand",
+    "recent_updates": "Launched March 2025 with SDKs and open-sourced components.",
+    "best_practices": "Zero-knowledge for sensitive data, decentralized verification."
+    },
+    {
+    "name": "Cerbos",
+    "link_to_doc_page": "https://docs.cerbos.dev/",
+    "type": "open source sdk",
+    "summary": "Authorization tool for securing AI agents with MCP, focusing on identity and access.",
+    "category": "Authentication",
+    "link_to_github": "https://github.com/cerbos/cerbos",
+    "recent_updates": "2025 for modern applications.",
+    "best_practices": "Granular authorization policies."
+    },
+    {
+    "name": "OAuth for MCP",
+    "link_to_doc_page": "https://blog.gitguardian.com/oauth-for-mcp-emerging-enterprise-patterns-for-agent-authorization/",
+    "type": "protocol",
+    "summary": "Emerging pattern using OAuth 2.1 for MCP authorization, with gateway-based policies.",
+    "category": "Authentication",
+    "link_to_github": null,
+    "recent_updates": "2025 enterprise patterns for non-deterministic agents.",
+    "best_practices": "Resource indicators, short-lived tokens, audit boundaries."
+    },
+    {
+    "name": "Wach AI",
+    "link_to_doc_page": null,
+    "type": "proprietary",
+    "summary": "AI agent verification platform ensuring trust in onchain actions with staking rewards.",
+    "category": "Authentication",
+    "link_to_github": null,
+    "recent_updates": "2025 for DeFAI utility.",
+    "best_practices": "Universal verifier for no rugs or rogue code."
+    },
+    {
+    "name": "FractionAI",
+    "link_to_doc_page": null,
+    "type": "proprietary",
+    "summary": "Security measures for AI agents including OAuth delegation, prompt hardening, and anomaly detection.",
+    "category": "Authentication",
+    "link_to_github": null,
+    "recent_updates": "2025 multi-layered defenses.",
+    "best_practices": "Least privilege, cryptographic verification."
+    }
+    ]
