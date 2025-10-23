@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Agents Infrastructure Landscape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="96x96" href="https://img.icons8.com/nolan/96/portal-1.png">
@@ -45,7 +48,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             padding: 20px;
@@ -54,10 +57,37 @@
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
+            text-align: left;
+            max-width: 1600px;
+            margin: 0 auto 30px;
+            padding: 20px 0;
             position: relative;
+        }
+
+        /* Reusable section styles */
+        .section {
+            max-width: 1600px;
+            margin: 30px auto 0;
+            padding: 0;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--accent-color);
+            letter-spacing: 0.5px;
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 18px;
+            line-height: 1.65;
+            box-shadow: 0 6px 18px var(--shadow-color);
+            color: var(--text-secondary);
+            font-size: 14px;
         }
 
         .theme-selector {
@@ -124,14 +154,24 @@
             font-weight: 700;
             color: var(--accent-color);
             margin-bottom: 8px;
-            text-transform: uppercase;
+            text-transform: none;
             letter-spacing: 2px;
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
         }
 
         .header p {
             font-size: clamp(12px, 1.5vw, 16px);
             color: var(--text-secondary);
             margin-top: 8px;
+        }
+
+        .header .intro {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 18px;
+            line-height: 1.65;
+            box-shadow: 0 6px 18px var(--shadow-color);
         }
 
         .landscape-grid {
@@ -442,11 +482,33 @@
                 <span id="theme-icon">🌙</span>
             </button>
         </div>
-        <h1>🤖 AI AGENTS INFRASTRUCTURE LANDSCAPE</h1>
-        <p>Comprehensive ecosystem map of tools and frameworks for building AI agents</p>
+        <h1>Ecosystem of AGENTIC INFRASTRUCTURE 2025</h1>
+        <p class="intro card">I built this living landscape to make sense of the fast‑moving agentic infrastructure world—for myself and for anyone trying to ship real multi‑agent systems. My goal is to keep a clean, opinionated shortlist of the most up‑to‑date infrastructure, SDKs, models, and techniques that actually help you deliver: from core compute and foundation models, to orchestration frameworks, memory/vector databases, evaluation and observability, tool integrations, and distributed agent map‑reduce. If you’re assembling an agentic stack today, start here. Kick the tires, compare trade‑offs, and choose tools that compound over time.</p>
     </div>
 
     <div class="landscape-grid" id="landscape"></div>
+
+    <section id="resources" class="section resources">
+        <h2 class="section-title">Articles and Materials</h2>
+        <p class="card" style="margin-top: 8px;">Further reading that shaped this landscape and can accelerate your research and implementation:</p>
+        <ul style="margin-top: 10px; padding-left: 18px; color: var(--text-secondary);">
+            <li>
+                Infrastructure for Multi‑Agent Systems — inspired by Pete Koomen — <a href="https://www.ycombinator.com/rfs" target="_blank" style="color: var(--accent-color); text-decoration: none;">YC Requests for Startups</a>
+            </li>
+            <li>
+                Short video overview that sparked this project — <a href="https://youtube.com/shorts/0qGjxsMzuxc?si=XD4Zp-huVntu8ggQ" target="_blank" style="color: var(--accent-color); text-decoration: none;">YouTube Short</a>
+            </li>
+            <li>
+                RLM.
+            </li>
+            <li>
+                MCP Gateway — bridging Model Context Protocol into A2A‑style ecosystems; lifecycle/session management for MCP servers. <a href="https://github.com/microsoft/mcp-gateway" target="_blank" style="color: var(--accent-color); text-decoration: none;">GitHub</a>
+            </li>
+            <li>
+                Google A2A — standardizing agent‑to‑agent communication, discovery, and task lifecycles. Useful overview: <a href="https://www.clarifai.com/blog/mcp-vs-a2a-clearly-explained" target="_blank" style="color: var(--accent-color); text-decoration: none;">MCP vs A2A</a>
+            </li>
+        </ul>
+    </section>
 
     <div class="footer">
         <p>Last updated: October 2025 | Community-driven landscape</p>
