@@ -613,114 +613,24 @@
         // Initialize theme manager
         const themeManager = new ThemeManager();
 
-        const landscapeData = {
-            "Frameworks & SDKs": {
-                large: true,
-                companies: [
-                    { name: "LangGraph", logo: "🔗", status: "active", description: "Build stateful, multi-actor applications with LLMs. Create cyclical graphs for agent workflows with persistence and streaming.", link: "https://github.com/langchain-ai/langgraph" },
-                    { name: "OpenAI Agents", logo: "🤖", status: "active", description: "Official OpenAI SDK for building autonomous agents. Includes function calling, streaming, and multi-turn conversations.", link: "https://platform.openai.com/docs/guides/agents" },
-                    { name: "AutoGPT", logo: "⚡", status: "active", description: "An autonomous AI agent that chains together LLM thoughts to autonomously achieve goals you set.", link: "https://github.com/Significant-Gravitas/AutoGPT" },
-                    { name: "CrewAI", logo: "👥", status: "active", description: "Framework for orchestrating role-playing autonomous AI agents. Enables collaborative intelligence with specialized agents.", link: "https://github.com/joaomdmoura/crewAI" },
-                    { name: "Semantic Kernel", logo: "🧠", status: "active", description: "Microsoft's SDK for integrating AI services into applications. Supports plugins, planning, and memory.", link: "https://github.com/microsoft/semantic-kernel" },
-                    { name: "LlamaIndex", logo: "🦙", status: "active", description: "Data framework for LLM applications. Connect custom data sources to large language models.", link: "https://github.com/run-llama/llama_index" },
-                    { name: "Haystack", logo: "🌾", status: "active", description: "End-to-end NLP framework for building production-ready search systems and agents.", link: "https://github.com/deepset-ai/haystack" },
-                    { name: "LangChain", logo: "⛓️", status: "active", description: "Popular framework for developing applications powered by language models. Includes chains, agents, and memory.", link: "https://github.com/langchain-ai/langchain" }
-                ]
-            },
-            "Orchestration": {
-                companies: [
-                    { name: "Prefect", logo: "🌊", status: "active", description: "Modern workflow orchestration platform for data and ML pipelines. Great for agent workflows.", link: "https://github.com/PrefectHQ/prefect" },
-                    { name: "Temporal", logo: "⏱️", status: "active", description: "Durable execution system for running reliable distributed applications including AI agents.", link: "https://temporal.io" },
-                    { name: "Airflow", logo: "🌬️", status: "active", description: "Platform to programmatically author, schedule and monitor workflows. Useful for agent pipelines.", link: "https://airflow.apache.org" },
-                    { name: "n8n", logo: "🔄", status: "active", description: "Workflow automation tool for connecting AI agents with various services and APIs.", link: "https://n8n.io" }
-                ]
-            },
-            "Memory & Vectors": {
-                companies: [
-                    { name: "Mem0", logo: "💾", status: "active", description: "Memory layer for AI agents. Provides persistent, personalized memory across conversations.", link: "https://github.com/mem0ai/mem0" },
-                    { name: "Zep", logo: "🐘", status: "active", description: "Long-term memory store for AI assistants and agents. Fast, scalable vector search.", link: "https://github.com/getzep/zep" },
-                    { name: "Chroma", logo: "🎨", status: "active", description: "Open-source embedding database for AI applications. Perfect for agent memory.", link: "https://github.com/chroma-core/chroma" },
-                    { name: "Pinecone", logo: "🌲", status: "active", description: "Managed vector database for long-term memory in production AI applications.", link: "https://www.pinecone.io" },
-                    { name: "Weaviate", logo: "🔮", status: "active", description: "Open-source vector search engine with built-in ML models for agent memory.", link: "https://github.com/weaviate/weaviate" },
-                    { name: "Qdrant", logo: "🎯", status: "active", description: "Vector database optimized for high-performance similarity search for AI agents.", link: "https://qdrant.tech" }
-                ]
-            },
-            "Observability": {
-                companies: [
-                    { name: "LangSmith", logo: "🔍", status: "active", description: "Platform for debugging, testing, and monitoring LLM applications and agents.", link: "https://www.langchain.com/langsmith" },
-                    { name: "W&B", logo: "📊", status: "active", description: "MLOps platform for tracking agent experiments and performance.", link: "https://wandb.ai" },
-                    { name: "Helicone", logo: "🚁", status: "active", description: "Open-source observability platform for LLM applications. Monitor costs and performance.", link: "https://github.com/Helicone/helicone" },
-                    { name: "Phoenix", logo: "🔥", status: "active", description: "Open-source observability tool for LLMs and agents. Trace and debug agent behavior.", link: "https://github.com/Arize-ai/phoenix" }
-                ]
-            },
-            "Tool Integration": {
-                companies: [
-                    { name: "Zapier", logo: "⚙️", status: "active", description: "Connect agents to 5000+ apps. Automate workflows and integrate external services.", link: "https://zapier.com" },
-                    { name: "Make", logo: "🔧", status: "active", description: "Visual platform to connect apps and automate workflows for AI agents.", link: "https://www.make.com" },
-                    { name: "Composio", logo: "🎯", status: "beta", description: "Unified API for agent tools. Connect agents to 100+ external services.", link: "https://composio.dev" },
-                    { name: "Browser Base", logo: "🌐", status: "active", description: "Headless browser automation for AI agents. Web scraping and interaction.", link: "https://browserbase.com" }
-                ]
-            },
-            "Code Execution": {
-                companies: [
-                    { name: "E2B", logo: "💻", status: "active", description: "Secure sandboxed code execution for AI agents. Run untrusted code safely.", link: "https://e2b.dev" },
-                    { name: "Modal", logo: "⚡", status: "active", description: "Serverless platform for running AI workloads and agent code execution.", link: "https://modal.com" },
-                    { name: "Replit", logo: "🔨", status: "active", description: "Cloud development environment with AI capabilities for agent code execution.", link: "https://replit.com" },
-                    { name: "CodeSandbox", logo: "📦", status: "active", description: "Online code editor and sandbox for agent development and testing.", link: "https://codesandbox.io" }
-                ]
-            },
-            "Agent Platforms": {
-                companies: [
-                    { name: "AgentGPT", logo: "🎮", status: "active", description: "Platform to assemble, configure, and deploy autonomous AI agents directly in browser.", link: "https://github.com/reworkd/AgentGPT" },
-                    { name: "SuperAGI", logo: "🦸", status: "active", description: "Open-source autonomous AI agent framework. Deploy agents with various tools.", link: "https://github.com/TransformerOptimus/SuperAGI" },
-                    { name: "BabyAGI", logo: "👶", status: "active", description: "Task-driven autonomous agent using OpenAI and Pinecone APIs.", link: "https://github.com/yoheinakajima/babyagi" },
-                    { name: "Cognosys", logo: "🧩", status: "beta", description: "No-code platform for building and deploying AI agents for business automation.", link: "https://www.cognosys.ai" }
-                ]
-            },
-            "LLM Providers": {
-                companies: [
-                    { name: "OpenAI", logo: "⭕", status: "active", description: "Leading AI research lab providing GPT models and APIs for agent development.", link: "https://openai.com" },
-                    { name: "Anthropic", logo: "🔺", status: "active", description: "AI safety company behind Claude, offering powerful models for agent applications.", link: "https://anthropic.com" },
-                    { name: "Google AI", logo: "🟦", status: "active", description: "Google's AI offerings including Gemini models for building intelligent agents.", link: "https://ai.google" },
-                    { name: "Mistral", logo: "💨", status: "active", description: "European AI company providing efficient open-source and API models.", link: "https://mistral.ai" }
-                ]
-            },
-            "Prompt Engineering": {
-                companies: [
-                    { name: "PromptLayer", logo: "📝", status: "active", description: "Platform for managing, versioning, and analyzing prompts for AI agents.", link: "https://promptlayer.com" },
-                    { name: "Humanloop", logo: "♾️", status: "active", description: "Collaborative platform for prompt engineering and LLM application development.", link: "https://humanloop.com" },
-                    { name: "Promptfoo", logo: "🧪", status: "active", description: "Test and evaluate LLM prompts for agent reliability and performance.", link: "https://github.com/promptfoo/promptfoo" },
-                    { name: "Parea", logo: "🎨", status: "beta", description: "Platform for testing, monitoring, and improving LLM applications and agents.", link: "https://parea.ai" }
-                ]
-            },
-            "Knowledge Bases": {
-                companies: [
-                    { name: "Notion", logo: "📋", status: "active", description: "Collaborative workspace that can serve as knowledge base for AI agents.", link: "https://notion.so" },
-                    { name: "Obsidian", logo: "💎", status: "active", description: "Local-first knowledge management tool for organizing agent information.", link: "https://obsidian.md" },
-                    { name: "Confluence", logo: "🌊", status: "active", description: "Team collaboration software for storing agent documentation and knowledge.", link: "https://www.atlassian.com/software/confluence" },
-                    { name: "GitBook", logo: "📚", status: "active", description: "Documentation platform for building knowledge bases for AI agent systems.", link: "https://gitbook.com" }
-                ]
-            },
-            "Testing & QA": {
-                companies: [
-                    { name: "Braintrust", logo: "🧪", status: "active", description: "Enterprise platform for evaluating and improving AI agent performance.", link: "https://braintrustdata.com" },
-                    { name: "DeepEval", logo: "📈", status: "active", description: "Open-source testing framework for LLM applications and agents.", link: "https://github.com/confident-ai/deepeval" },
-                    { name: "Giskard", logo: "🛡️", status: "active", description: "Testing and validation platform for ML models and AI agents.", link: "https://giskard.ai" },
-                    { name: "Arthur", logo: "🎯", status: "beta", description: "ML monitoring and testing platform for production AI agents.", link: "https://arthur.ai" }
-                ]
-            },
-            "Multi-Agent": {
-                companies: [
-                    { name: "AutoGen", logo: "🤝", status: "active", description: "Microsoft's framework for building multi-agent conversation systems.", link: "https://github.com/microsoft/autogen" },
-                    { name: "MetaGPT", logo: "🏢", status: "active", description: "Multi-agent framework simulating software company roles for task completion.", link: "https://github.com/geekan/MetaGPT" },
-                    { name: "CAMEL", logo: "🐫", status: "active", description: "Communicative Agents for Mind Exploration of LLMs framework.", link: "https://github.com/camel-ai/camel" },
-                    { name: "ChatDev", logo: "💼", status: "active", description: "Virtual software company powered by multiple intelligent agents.", link: "https://github.com/OpenBMB/ChatDev" }
-                ]
-            }
-        };
+        let landscapeData = null;
+
+        function loadLandscapeData() {
+            const container = document.getElementById('landscape');
+            fetch('data/landscape.json', { cache: 'no-store' })
+                .then(response => response.json())
+                .then(data => {
+                    landscapeData = data;
+                    renderLandscape();
+                })
+                .catch(() => {
+                    container.innerHTML = '<div class="card">Failed to load data.</div>';
+                });
+        }
 
         function renderLandscape() {
             const container = document.getElementById('landscape');
+            container.innerHTML = '';
             
             Object.entries(landscapeData).forEach(([category, data]) => {
                 const categoryDiv = document.createElement('div');
@@ -792,7 +702,7 @@
             if (e.key === 'Escape') closeModal();
         });
 
-        renderLandscape();
+        loadLandscapeData();
     </script>
 </body>
 </html>
