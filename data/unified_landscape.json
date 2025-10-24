@@ -8,20 +8,20 @@
       "grok_data.json",
       "preplexity_ai_agent_ecosystem_2025.json"
     ],
-    "total_entries": 44,
-    "version": "1.0"
+    "total_entries": 54,
+    "version": "1.4"
   },
   "tools": [
     {
       "name": "Agent2Agent (A2A)",
       "type": "protocol",
       "category": [
-        "Cross or Multi-Agent Communication Protocols",
-        "Tool & Data Access Protocols"
+        "Agent Communication & Tool Access Protocols"
       ],
       "summary": "Open protocol for interop and messaging between independent agents across runtimes. Peer-to-peer protocol for coordination and secure enterprise actions between agents.",
       "docs_url": "https://a2a-protocol.org/",
       "github_url": "https://github.com/a2aproject/A2A",
+      "icon_url": "https://a2a-protocol.org/latest/assets/a2a-logo-black.svg",
       "oss": true,
       "vendor": "A2A Project",
       "notes": "SDKs in Python, Go, Java; samples repo available. Google-launched 2025 for enterprise.",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Arize Phoenix",
-      "type": "open source sdk",
+      "type": "open-source",
       "category": [
         "Prompt Management & Evaluation",
         "Monitoring & Observability"
@@ -41,6 +41,7 @@
       "summary": "LLM observability and evaluation with notebooks and dashboards.",
       "docs_url": "https://docs.arize.com/phoenix/",
       "github_url": "https://github.com/Arize-ai/phoenix",
+      "icon_url": "https://arize.com/favicon.ico",
       "oss": true,
       "vendor": "Arize AI",
       "notes": "OSS with hosted options.",
@@ -58,6 +59,7 @@
       "summary": "Managed OIDC/OAuth platform with SDKs, social logins, rules/actions.",
       "docs_url": "https://auth0.com/docs/authenticate/protocols/openid-connect-protocol",
       "github_url": null,
+      "icon_url": "https://auth0.com/favicon.ico",
       "oss": false,
       "vendor": "Okta",
       "notes": "Fastest path for SaaS auth.",
@@ -67,7 +69,7 @@
       ]
     },
     {
-      "name": "AutoGen / Microsoft Agent Framework",
+      "name": "AutoGen",
       "type": "open source sdk",
       "category": [
         "Agent Orchestration & Frameworks"
@@ -76,6 +78,7 @@
       "docs_url": "https://microsoft.github.io/autogen/stable/",
       "doc_link": "https://microsoft.github.io/autogen/",
       "github_url": "https://github.com/microsoft/autogen",
+      "icon_url": "https://raw.githubusercontent.com/microsoft/autogen/main/website/static/img/autogen-icon.png",
       "oss": true,
       "vendor": "Microsoft",
       "notes": "Migration path from AutoGen to Agent Framework. 2025 AG2 release for end-to-end automation.",
@@ -96,6 +99,7 @@
       "summary": "Popular finetuning stack for Llama/Mistral/etc., supports SFT, DPO, and compression.",
       "docs_url": "https://github.com/axolotl-ai-cloud/axolotl",
       "github_url": "https://github.com/axolotl-ai-cloud/axolotl",
+      "icon_url": "https://raw.githubusercontent.com/axolotl-ai-cloud/axolotl/main/icon.png",
       "oss": true,
       "vendor": "Community",
       "notes": "Used widely for rapid experiments.",
@@ -113,6 +117,7 @@
       "summary": "Scalable open-source vector DB for decentralized agents.",
       "docs_url": "https://milvus.io/docs",
       "github_url": "https://github.com/milvus-io/milvus",
+      "icon_url": "https://www.trychroma.com/favicon.ico",
       "oss": true,
       "vendor": "Community",
       "notes": "2025 for cost-efficiency.",
@@ -130,6 +135,7 @@
       "summary": "Developer-friendly multi-agent orchestration with roles/tasks and good tool ecosystem. Role-playing autonomous AI agents framework with task delegation and flexible process execution (sequential, parallel, hierarchical). Includes memory and caching capabilities for team-based workflows.",
       "docs_url": "https://docs.crewai.com/",
       "github_url": "https://github.com/joaomdmoura/crewAI",
+      "icon_url": "https://avatars.githubusercontent.com/u/170677839?s=48&v=4",
       "oss": true,
       "vendor": "Community",
       "notes": "Rapid iteration; good for PoCs. 2025 updates for faster orchestration.",
@@ -145,12 +151,12 @@
       "name": "DSPy",
       "type": "open source sdk",
       "category": [
-        "Context Optimization & Memory",
-        "Prompt Management & Evaluation"
+        "Agent Orchestration & Frameworks"
       ],
       "summary": "Programmatic optimization of prompts and weights; declarative pipelines for LLM apps/agents. Optimization-first framework with programmatic prompt engineering and ReAct architecture. Enables compilation and systematic optimization of LLM pipelines with DSPy modules.",
       "docs_url": "https://dspy.ai/",
       "github_url": "https://github.com/stanfordnlp/dspy",
+      "icon_url": "https://github.com/stanfordnlp/dspy/blob/main/docs/docs/static/img/dspy_logo.png?raw=true",
       "oss": true,
       "vendor": "Stanford NLP",
       "notes": "Optimizes modules via supervision.",
@@ -159,8 +165,28 @@
       "enterprise_ready": true,
       "license": "MIT",
       "family": [
-        "Memory, Knowledge & Context",
-        "Observability, Control & Evaluation"
+        "Core Agent Infrastructure"
+      ]
+    },
+    {
+      "name": "Flowise",
+      "type": "open source sdk",
+      "category": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Low-code visual builder for building customized LLM flows and AI agents with drag-and-drop interface. Supports LangChain integration and provides ready-to-use templates for rapid prototyping.",
+      "docs_url": "https://docs.flowiseai.com/",
+      "github_url": "https://github.com/FlowiseAI/Flowise",
+      "icon_url": "https://raw.githubusercontent.com/FlowiseAI/Flowise/main/packages/ui/public/flowise_icon.svg",
+      "oss": true,
+      "vendor": "FlowiseAI",
+      "notes": "Popular for no-code/low-code agent building. Good for rapid prototyping and demos.",
+      "last_known_update": "2025-09-01",
+      "maturity": "production",
+      "enterprise_ready": false,
+      "license": "Apache-2.0",
+      "family": [
+        "Core Agent Infrastructure"
       ]
     },
     {
@@ -172,6 +198,7 @@
       "summary": "Enterprise tracing/metrics for LLM/agent apps integrated with infra monitoring.",
       "docs_url": "https://docs.datadoghq.com/llm_observability/",
       "github_url": null,
+      "icon_url": "https://docs.datadoghq.com/favicon.ico",
       "oss": false,
       "vendor": "Datadog",
       "notes": "Good for orgs already on Datadog.",
@@ -184,12 +211,12 @@
       "name": "Envoy AI Gateway (MCP)",
       "type": "open source sdk",
       "category": [
-        "MCP Gateways & LLM Gateways",
         "Monitoring & Observability"
       ],
       "summary": "Envoy AI Gateway adds native MCP support for secure, observable tool calls through a service mesh. Gateway with MCP support for secure and flexible connections to external tools and data sources.",
       "docs_url": "https://aigateway.envoyproxy.io/blog/mcp-implementation/",
       "github_url": "https://github.com/envoyproxy/envoy",
+      "icon_url": "https://www.envoyproxy.io/favicon.ico",
       "oss": true,
       "vendor": "Envoy (CNCF)",
       "notes": "Policy-driven routing for MCP; meshes well in K8s. Announced October 2025 for industry standard adoption.",
@@ -208,6 +235,7 @@
       "summary": "Graph-structured retrieval that scales well for long-horizon reasoning & parallel steps.",
       "docs_url": "https://microsoft.github.io/graphrag/",
       "github_url": "https://github.com/microsoft/graphrag",
+      "icon_url": "https://avatars.githubusercontent.com/u/6154722?s=48&v=4",
       "oss": true,
       "vendor": "Microsoft",
       "notes": "Pairs with agents for complex corpora.",
@@ -225,6 +253,7 @@
       "summary": "Secrets management (API keys, tokens, certs) with audit logs; dynamic creds.",
       "docs_url": "https://developer.hashicorp.com/vault/tutorials/secrets-management",
       "github_url": "https://github.com/hashicorp/vault",
+      "icon_url": "https://www.vaultproject.io/favicon.ico",
       "oss": true,
       "vendor": "HashiCorp",
       "notes": "Back MCP tool creds with Vault/KMS.",
@@ -242,6 +271,7 @@
       "summary": "Logging, metrics, costs, and routing for LLM/agent requests; gateway-style drop-in.",
       "docs_url": "https://docs.helicone.ai/",
       "github_url": "https://github.com/Helicone/helicone",
+      "icon_url": "https://www.helicone.ai/favicon.ico",
       "oss": true,
       "vendor": "Helicone",
       "notes": "Easy to adopt; proxy pattern.",
@@ -257,8 +287,9 @@
         "Compute & Inference"
       ],
       "summary": "Kubernetes model serving with vLLM, KV cache, autoscaling, and AI Gateway integrations.",
-      "docs_url": "https://kserve.github.io/website/0.15/",
+      "docs_url": "https://kserve.github.io/website/",
       "github_url": "https://github.com/kserve/kserve",
+      "icon_url": "https://avatars.githubusercontent.com/u/83512434?s=48&v=4",
       "oss": true,
       "vendor": "KServe / Kubeflow community",
       "notes": "Good for K8s-native serving.",
@@ -271,11 +302,12 @@
       "name": "Kong AI Gateway (MCP)",
       "type": "proprietary",
       "category": [
-        "MCP Gateways & LLM Gateways"
+        "Monitoring & Observability"
       ],
       "summary": "Gateway to securely expose MCP servers and agents; policies for authz, rate limits, and observability.",
       "docs_url": "https://konghq.com/blog/product-releases/securing-observing-governing-mcp-servers-with-ai-gateway",
       "github_url": null,
+      "icon_url": "https://docs.konghq.com/favicon.ico",
       "oss": false,
       "vendor": "Kong",
       "notes": "Focus on governance and security of MCP traffic.",
@@ -291,6 +323,7 @@
       "summary": "Prompt and document compression to reduce tokens while preserving task performance.",
       "docs_url": "https://github.com/microsoft/LLMLingua",
       "github_url": "https://github.com/microsoft/LLMLingua",
+      "icon_url": "https://avatars.githubusercontent.com/u/6154722?s=48&v=4",
       "oss": true,
       "vendor": "Microsoft",
       "notes": "Apply before increasing context windows.",
@@ -309,6 +342,7 @@
       "docs_url": "https://python.langchain.com/docs/langgraph/",
       "doc_link": "https://langchain-ai.github.io/langgraph/",
       "github_url": "https://github.com/langchain-ai/langgraph",
+      "icon_url": "https://avatars.githubusercontent.com/u/126733545?s=200&v=4",
       "oss": true,
       "vendor": "LangChain",
       "notes": "Prefer explicit graphs over opaque loops for prod. 2025 enhancements for retries in production.",
@@ -331,6 +365,7 @@
       "docs_url": "https://docs.smith.langchain.com/",
       "github_url": null,
       "oss": false,
+      "icon_url": "https://avatars.githubusercontent.com/u/126733545?s=200&v=4",
       "vendor": "LangChain",
       "notes": "Deep integration with LangGraph. 2025 updates for agentic prompts.",
       "last_known_update": "2025-07-01",
@@ -349,6 +384,7 @@
       "link_to_doc_page": "https://docs.langfuse.com/",
       "github_url": "https://github.com/langfuse/langfuse",
       "oss": true,
+      "icon_url": "https://langfuse.com/favicon.ico",
       "vendor": "Langfuse",
       "notes": "Fits well with LangChain/LlamaIndex/DSPy. Open-source observability tool for tracing agent prompts, tool calls, and performance in AI agent workflows.",
       "last_known_update": "2025-08-01",
@@ -360,12 +396,12 @@
       "name": "LiteLLM MCP Gateway",
       "type": "open source sdk",
       "category": [
-        "MCP Gateways & LLM Gateways",
         "Monitoring & Observability"
       ],
       "summary": "Gateway that exposes/controls MCP servers with key/team/org permissions and routes to 100+ model providers.",
       "docs_url": "https://docs.litellm.ai/docs/mcp",
       "github_url": "https://github.com/BerriAI/litellm",
+      "icon_url": "https://avatars.githubusercontent.com/u/121462774?s=48&v=4",
       "oss": true,
       "vendor": "LiteLLM (BerriAI)",
       "notes": "Permission management for MCP tools; works with Proxy server.",
@@ -384,9 +420,52 @@
       "docs_url": "https://docs.llamaindex.ai/en/stable/use_cases/agents/",
       "github_url": "https://github.com/run-llama/llama_index",
       "oss": true,
+      "icon_url": "https://avatars.githubusercontent.com/u/130722866?s=200&v=4",
       "vendor": "LlamaIndex",
       "notes": "Good retrieval + agentic retrieval patterns.",
       "last_known_update": "2025-07-01",
+      "family": [
+        "Core Agent Infrastructure"
+      ]
+    },
+    {
+      "name": "Langflow",
+      "type": "open source sdk",
+      "category": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Visual framework for building multi-agent and RAG applications with drag-and-drop interface. Python-based with LangChain integration and component marketplace for extending functionality.",
+      "docs_url": "https://docs.langflow.org/",
+      "github_url": "https://github.com/langflow-ai/langflow",
+      "oss": true,
+      "icon_url": "https://www.langflow.org/favicon.ico",
+      "vendor": "Langflow AI",
+      "notes": "Visual alternative to LangChain code. Good for prototyping complex agent workflows.",
+      "last_known_update": "2025-09-01",
+      "maturity": "production",
+      "enterprise_ready": false,
+      "license": "MIT",
+      "family": [
+        "Core Agent Infrastructure"
+      ]
+    },
+    {
+      "name": "n8n",
+      "type": "open source sdk",
+      "category": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Workflow automation platform with AI agents capabilities. Supports building custom AI agents with logic and control, multi-agent systems, and integration with 400+ services and APIs.",
+      "docs_url": "https://docs.n8n.io/",
+      "github_url": "https://github.com/n8n-io/n8n",
+      "icon_url": "https://docs.n8n.io/_images/n8n-docs-icon.svg",
+      "oss": true,
+      "vendor": "n8n",
+      "notes": "Strong automation focus with AI agent capabilities. Good for integrating agents with existing business workflows.",
+      "last_known_update": "2025-09-01",
+      "maturity": "production",
+      "enterprise_ready": true,
+      "license": "Sustainable Use License",
       "family": [
         "Core Agent Infrastructure"
       ]
@@ -401,6 +480,7 @@
       "docs_url": "https://mem0.ai/docs",
       "github_url": "https://github.com/mem0ai/mem0",
       "oss": true,
+      "icon_url": "https://avatars.githubusercontent.com/u/137054526?s=48&v=4",
       "vendor": "Mem0",
       "notes": "Useful for persistent agent memory. 2025 stack for no refreshes needed.",
       "last_known_update": "2025-07-01",
@@ -429,17 +509,35 @@
       "name": "Model Context Protocol (MCP)",
       "type": "protocol",
       "category": [
-        "Cross or Multi-Agent Communication Protocols",
-        "Tool & Data Access Protocols"
+        "Agent Communication & Tool Access Protocols"
       ],
       "summary": "Open standard to expose tools, data, and prompts to AI assistants and apps. Open-source standard for connecting AI applications to external systems, enabling seamless data exchange.",
       "docs_url": "https://modelcontextprotocol.io/",
       "github_url": "https://github.com/modelcontextprotocol",
+      "icon_url": "https://avatars.githubusercontent.com/u/182288589?s=200&v=4",
       "oss": true,
       "vendor": "Anthropic + community",
       "notes": "Adopted across IDEs and agent frameworks. 2025 adoption as internal wiki for agent-tool context sharing.",
       "last_known_update": "2025-11-25",
       "recent_updates": "2025 adoption as internal wiki for agent-tool context sharing.",
+      "family": [
+        "Core Agent Infrastructure"
+      ]
+    },
+    {
+      "name": "MCP Gateway",
+      "type": "open source sdk",
+      "category": [
+        "Agent Communication & Tool Access Protocols"
+      ],
+      "summary": "Reverse proxy and management layer for MCP servers, enabling scalable, session-aware routing and lifecycle management of MCP servers in Kubernetes environments.",
+      "docs_url": "https://github.com/microsoft/mcp-gateway",
+      "github_url": "https://github.com/microsoft/mcp-gateway",
+      "icon_url": "https://avatars.githubusercontent.com/u/6154722?s=48&v=4",
+      "oss": true,
+      "vendor": "Microsoft",
+      "notes": "Kubernetes-native gateway for managing MCP server instances at scale with session affinity and health checks.",
+      "last_known_update": "2025-10-01",
       "family": [
         "Core Agent Infrastructure"
       ]
@@ -453,6 +551,7 @@
       "summary": "Automates GPU lifecycle on Kubernetes (drivers, toolkit, DCGM), supports MIG.",
       "docs_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/",
       "github_url": "https://github.com/NVIDIA/gpu-operator",
+      "icon_url": "https://www.nvidia.com/favicon.ico",
       "oss": true,
       "vendor": "NVIDIA",
       "notes": "Essential for reliable GPU clusters.",
@@ -471,6 +570,7 @@
       "docs_url": "https://github.com/openai/openai-agents-python",
       "doc_link": "https://openai.github.io/openai-agents-python/",
       "github_url": "https://github.com/openai/openai-agents-python",
+      "icon_url": "https://raw.githubusercontent.com/openai/openai-agents-python/main/icon.png",
       "oss": true,
       "vendor": "OpenAI",
       "notes": "Evolution of Swarm; integrates with gateways.",
@@ -483,38 +583,94 @@
       ]
     },
     {
-      "name": "OpenPipe",
+      "name": "OpenRouter",
       "type": "proprietary",
       "category": [
-        "Fine-Tuning & Experimentation",
-        "Prompt Management & Evaluation"
+        "Model API"
       ],
-      "summary": "Capture production traces to fine-tune/optimize models; evaluation + rollout tooling.",
-      "docs_url": "https://docs.openpipe.ai/",
+      "summary": "Unified API gateway for accessing 100+ AI models from multiple providers with single integration. Supports load balancing, fallbacks, and usage analytics.",
+      "docs_url": "https://openrouter.ai/docs",
       "github_url": null,
       "oss": false,
-      "vendor": "OpenPipe",
-      "notes": "Good for continual improvement loops.",
-      "last_known_update": "2025-06-01",
+      "icon_url": "https://openrouter.ai/favicon.ico",
+      "vendor": "OpenRouter",
+      "notes": "Aggregates models from OpenAI, Anthropic, Google, Meta and more. Community MCP servers available.",
+      "last_known_update": "2025-10-01",
       "family": [
-        "Compute, Infrastructure & Scaling",
-        "Observability, Control & Evaluation"
+        "Compute, Infrastructure & Scaling"
       ]
     },
     {
-      "name": "OpenRouter MCP Integration",
+      "name": "OpenAI API",
       "type": "proprietary",
       "category": [
-        "MCP Gateways & LLM Gateways"
+        "Model API"
       ],
-      "summary": "Converts MCP tool definitions to OpenAI-compatible tools to run through OpenRouter's gateway.",
-      "docs_url": "https://openrouter.ai/docs/use-cases/mcp-servers",
+      "summary": "API for GPT-4, GPT-4o, o1, and other OpenAI models. Industry-standard API with function calling, vision, and embeddings support.",
+      "docs_url": "https://platform.openai.com/docs/api-reference",
       "github_url": null,
       "oss": false,
-      "vendor": "OpenRouter",
-      "notes": "Community MCP servers also exist for OpenRouter.",
-      "last_known_update": "2025-07-01",
-      "family": []
+      "icon_url": "https://ih1.redbubble.net/image.4930908270.4452/st,small,507x507-pad,600x600,f8f8f8.jpg",
+      "vendor": "OpenAI",
+      "notes": "Most widely adopted LLM API. Supports assistants API, fine-tuning, and DALL-E image generation.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "Google Gemini API",
+      "type": "proprietary",
+      "category": [
+        "Model API"
+      ],
+      "summary": "API for Gemini 1.5 Pro, Flash, and other Google AI models. Supports multimodal inputs, large context windows, and function calling.",
+      "docs_url": "https://ai.google.dev/docs",
+      "github_url": null,
+      "oss": false,
+      "icon_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYM-_oCfjiysWdSUR-8tzX8fUEtcdTo1naJg&s",
+      "vendor": "Google",
+      "notes": "Native multimodal support with 1M+ token context. Integrated with Google Cloud Vertex AI.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "Hugging Face Inference API",
+      "type": "proprietary",
+      "category": [
+        "Model API"
+      ],
+      "summary": "Hosted inference API for 150,000+ open-source models. Supports serverless and dedicated endpoints with custom model deployments.",
+      "docs_url": "https://huggingface.co/docs/api-inference/",
+      "github_url": "https://github.com/huggingface",
+      "oss": false,
+      "icon_url": "https://huggingface.co/favicon.ico",
+      "vendor": "Hugging Face",
+      "notes": "Access to open-source models like Llama, Mistral, and community fine-tunes. Supports text generation, embeddings, and more.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "RunPod",
+      "type": "proprietary",
+      "category": [
+        "Model API"
+      ],
+      "summary": "Cloud GPU platform for deploying and hosting AI models. Serverless GPU endpoints with pay-per-second billing and custom container support.",
+      "docs_url": "https://docs.runpod.io/",
+      "github_url": null,
+      "icon_url": "https://avatars.githubusercontent.com/u/95939477?s=48&v=4",
+      "oss": false,
+      "vendor": "RunPod",
+      "notes": "Cost-effective GPU infrastructure for custom model hosting. Supports vLLM, TGI, and custom inference servers.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
     },
     {
       "name": "OpenTelemetry GenAI (agent & model spans)",
@@ -525,6 +681,7 @@
       "summary": "Semantic conventions for traces/metrics/events of LLMs and agent operations.",
       "docs_url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
       "github_url": "https://github.com/open-telemetry/semantic-conventions",
+      "icon_url": "https://avatars.githubusercontent.com/u/49998002?s=200&v=4",
       "oss": true,
       "vendor": "OpenTelemetry",
       "notes": "Adopt across stack for portable telemetry.",
@@ -542,6 +699,7 @@
       "summary": "OpenID Certified OAuth2/OIDC server; bring-your-own UI; integrates with any IdP.",
       "docs_url": "https://www.ory.sh/hydra",
       "github_url": "https://github.com/ory/hydra",
+      "icon_url": "https://www.ory.sh/favicon.ico",
       "oss": true,
       "vendor": "Ory",
       "notes": "Use with Ory Kratos for identities.",
@@ -559,6 +717,7 @@
       "summary": "Structured decoding / constrained outputs (e.g., JSON schemas) to make agent tool I/O robust.",
       "docs_url": "https://outlines-dev.github.io/outlines/",
       "github_url": "https://github.com/outlines-dev/outlines",
+      "icon_url": "https://avatars.githubusercontent.com/u/142257755?s=48&v=4",
       "oss": true,
       "vendor": "Community",
       "notes": "Great for tool-call strictness.",
@@ -578,6 +737,7 @@
       "link_to_doc_page": "https://docs.pinecone.io/",
       "github_url": null,
       "oss": false,
+      "icon_url": "https://pinecone.io/favicon.ico",
       "vendor": "Pinecone",
       "notes": "Popular for enterprise RAG/agents. 2025 top for 150 QPS.",
       "last_known_update": "2025-02-01",
@@ -589,11 +749,12 @@
       "name": "Portkey MCP Gateway",
       "type": "proprietary",
       "category": [
-        "MCP Gateways & LLM Gateways"
+        "Monitoring & Observability"
       ],
       "summary": "Universal adapter for MCP servers with auth, observability, and policy via Portkey AI Gateway.",
       "docs_url": "https://portkey.ai/docs/product/mcp-gateway",
       "github_url": "https://github.com/Portkey-AI/gateway",
+      "icon_url": "https://portkey.ai/favicon.ico",
       "oss": "mixed",
       "vendor": "Portkey",
       "notes": "Supports remote MCP; Response API integration.",
@@ -611,6 +772,7 @@
       "link_to_doc_page": "https://qdrant.tech/documentation/",
       "github_url": "https://github.com/qdrant/qdrant",
       "oss": true,
+      "icon_url": "https://qdrant.tech/favicon.ico",
       "vendor": "Qdrant",
       "notes": "2025 updates for context/intent handling.",
       "last_known_update": "2025-09-01",
@@ -628,6 +790,7 @@
       "summary": "Distributed workers, batching, and async inference patterns for LLM/agent tasks.",
       "docs_url": "https://docs.ray.io/en/latest/serve/index.html",
       "github_url": "https://github.com/ray-project/ray",
+      "icon_url": "https://avatars.githubusercontent.com/u/22125274?s=48&v=4",
       "oss": true,
       "vendor": "Anyscale + community",
       "notes": "Use Ray Data/Workflows for pipelines.",
@@ -645,6 +808,7 @@
       "summary": "Durable, distributed DAG workflows; good for sharding/merging agent tasks.",
       "docs_url": "https://docs.ray.io/en/latest/workflows/workflows.html",
       "github_url": "https://github.com/ray-project/ray",
+      "icon_url": "https://avatars.githubusercontent.com/u/22125274?s=48&v=4",
       "oss": true,
       "vendor": "Anyscale + community",
       "notes": "Combine with Ray Serve for end-to-end.",
@@ -662,6 +826,7 @@
       "summary": "Meta/PyTorch utilities and recipes for efficient LLM finetuning.",
       "docs_url": "https://pytorch.org/torchtune/stable/index.html",
       "github_url": "https://github.com/pytorch/torchtune",
+      "icon_url": "https://pytorch.org/favicon.ico",
       "oss": true,
       "vendor": "Meta AI / PyTorch",
       "notes": "Battle-tested recipes.",
@@ -680,6 +845,7 @@
       "summary": "Evaluation and feedback functions for LLM apps and agents; integrates with traces.",
       "docs_url": "https://www.trulens.org/",
       "github_url": "https://github.com/truera/trulens",
+      "icon_url": "https://www.trulens.org/img/squid.png",
       "oss": true,
       "vendor": "TruEra",
       "notes": "Use alongside OTel + your logger.",
@@ -697,6 +863,7 @@
       "summary": "Toolkit for efficient LoRA finetuning/inference optimizations for Llama-family models.",
       "docs_url": "https://github.com/unslothai/unsloth",
       "github_url": "https://github.com/unslothai/unsloth",
+      "icon_url": "https://raw.githubusercontent.com/unslothai/unsloth/main/icon.png",
       "oss": true,
       "vendor": "UnslothAI",
       "notes": "Strong perf on consumer GPUs.",
@@ -715,6 +882,7 @@
       "docs_url": "https://weaviate.io/developers/weaviate",
       "github_url": "https://github.com/weaviate/weaviate",
       "oss": true,
+      "icon_url": "https://avatars.githubusercontent.com/u/37794290?s=48&v=4",
       "vendor": "Weaviate",
       "notes": "Helm charts; TS v2 client. 2025 for multi-agent memory.",
       "last_known_update": "2025-06-01",
@@ -731,6 +899,7 @@
       "summary": "Open-source IAM with OIDC, OAuth2, SAML, SCIM; multi-tenant and cloud/OSS options.",
       "docs_url": "https://zitadel.com/docs/guides/overview",
       "github_url": "https://github.com/zitadel/zitadel",
+      "icon_url": "https://zitadel.com/favicon.ico",
       "oss": true,
       "vendor": "Zitadel",
       "notes": "Good self-hosted Auth0 alternative.",
@@ -748,29 +917,13 @@
       "summary": "PostgreSQL extension for vector similarity; supported by major managed Postgres offerings.",
       "docs_url": "https://github.com/pgvector/pgvector",
       "github_url": "https://github.com/pgvector/pgvector",
+      "icon_url": "https://avatars.githubusercontent.com/u/126733545?s=200&v=4",
       "oss": true,
       "vendor": "pgvector community",
       "notes": "Good when data already in Postgres.",
       "last_known_update": "2025-06-01",
       "family": [
         "Memory, Knowledge & Context"
-      ]
-    },
-    {
-      "name": "promptfoo",
-      "type": "open source sdk",
-      "category": [
-        "Prompt Management & Evaluation"
-      ],
-      "summary": "Prompt/agent test runner & red-teaming with CI integration.",
-      "docs_url": "https://www.promptfoo.dev/docs/",
-      "github_url": "https://github.com/promptfoo/promptfoo",
-      "oss": true,
-      "vendor": "Community",
-      "notes": "Great for regression suites pre-release.",
-      "last_known_update": "2025-07-01",
-      "family": [
-        "Observability, Control & Evaluation"
       ]
     },
     {
@@ -783,11 +936,104 @@
       "docs_url": "https://docs.vllm.ai/en/latest/",
       "github_url": "https://github.com/vllm-project/vllm",
       "oss": true,
+      "icon_url": "https://docs.vllm.ai/favicon.ico",
       "vendor": "vLLM Project",
       "notes": "Backbone for many KServe/Ray deployments.",
       "last_known_update": "2025-08-01",
       "family": [
         "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "TensorRT-LLM",
+      "type": "open source sdk",
+      "category": [
+        "Compute & Inference"
+      ],
+      "summary": "NVIDIA's optimized inference engine for LLMs with state-of-the-art optimizations including in-flight batching, paged attention, and multi-GPU/multi-node support.",
+      "docs_url": "https://nvidia.github.io/TensorRT-LLM/",
+      "github_url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "icon_url": "https://www.nvidia.com/favicon.ico",
+      "oss": true,
+      "vendor": "NVIDIA",
+      "notes": "Production-grade inference with best performance on NVIDIA GPUs. Supports FP8, INT4 quantization.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "Text Generation Inference (TGI)",
+      "type": "open source sdk",
+      "category": [
+        "Compute & Inference"
+      ],
+      "summary": "Hugging Face's production-ready inference server with optimized transformers, continuous batching, and streaming support for deploying LLMs at scale.",
+      "docs_url": "https://huggingface.co/docs/text-generation-inference/",
+      "github_url": "https://github.com/huggingface/text-generation-inference",
+      "icon_url": "https://huggingface.co/favicon.ico",
+      "oss": true,
+      "vendor": "Hugging Face",
+      "notes": "Powers Hugging Face Inference API. Supports quantization, token streaming, and safety features.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "Ollama",
+      "type": "open source sdk",
+      "category": [
+        "Compute & Inference"
+      ],
+      "summary": "Easy-to-use tool for running LLMs locally with simple CLI and API. Supports Llama, Mistral, Gemma and custom models with automatic GPU acceleration.",
+      "docs_url": "https://github.com/ollama/ollama",
+      "github_url": "https://github.com/ollama/ollama",
+      "oss": true,
+      "icon_url": "https://raw.githubusercontent.com/ollama/ollama/main/docs/ollama.png",
+      "vendor": "Ollama",
+      "notes": "Popular for local development and testing. Simple model management and cross-platform support.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "Triton Inference Server",
+      "type": "open source sdk",
+      "category": [
+        "Compute & Inference"
+      ],
+      "summary": "NVIDIA's open-source inference serving software supporting multiple frameworks (TensorRT, PyTorch, ONNX) with dynamic batching and model ensembles.",
+      "docs_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/",
+      "github_url": "https://github.com/triton-inference-server/server",
+      "oss": true,
+      "vendor": "NVIDIA",
+      "notes": "Production-grade serving for ML models. Supports concurrent model execution and multi-model serving.",
+      "last_known_update": "2025-09-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "ComfyUI",
+      "type": "open source sdk",
+      "category": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Node-based UI for Stable Diffusion and generative AI workflows with modular pipeline design. Flexible visual interface for building and composing AI agent workflows.",
+      "docs_url": "https://github.com/comfyanonymous/ComfyUI",
+      "github_url": "https://github.com/comfyanonymous/ComfyUI",
+      "icon_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAASFBMVEVHcEwYLtsYLtkXLtkXLdkYLtkWLdcFIdoAD95uerfI1XLR3mq3xIP8/yj0/zvw/0FSYMP5/zKMmKQtPNOuuozj8FOhrZW7x4FMWFFbAAAABnRSTlMAUrPX87KxijklAAAA00lEQVR4AX3SBw6DMAxA0UzbrIzO+9+02GkEpoWP9hPZZs06Hw75aI3k4W/+wkQtnGZNhF1I34BzalQcxkmasY0b9raklNcvLYU1GNiiOeVWauOa/XS526gRyzpV/7HeUOG9Jp6vcsvUrCPeKg/3KBKBQhoTD1dQggPWzPVfFOIgo85/kR4y6oB/8SlIEh7wvmTuKd3wgLVW1sTfRBoR7oWVqy/U2NcrWDYMINE7NUuJuoV+2fhaWmnbjzcOWnRv7XbiLh/Y9dNUqk2y0QcNwTu7wgf+/BhsPUhf4QAAAABJRU5ErkJggg==",
+      "oss": true,
+      "vendor": "Community",
+      "notes": "Popular node-based interface for generative workflows. Excellent for visual composition and complex AI pipelines.",
+      "last_known_update": "2025-10-01",
+      "maturity": "production",
+      "enterprise_ready": false,
+      "license": "GPL-3.0",
+      "family": [
+        "Core Agent Infrastructure"
       ]
     }
   ]

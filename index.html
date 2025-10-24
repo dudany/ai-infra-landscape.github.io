@@ -19,17 +19,10 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Mermaid -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
 </head>
 <body>
     <div class="header">
         <div class="theme-selector">
-            <button class="view-toggle" id="view-toggle" title="Toggle between grid and diagram view">
-                <span id="view-icon">📊</span>
-                <span id="view-text">Diagram</span>
-            </button>
             <div class="toggle-group">
                 <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
                     <span id="theme-icon">🌙</span>
@@ -37,14 +30,10 @@
             </div>
         </div>
         <h1>Ecosystem of AGENTIC INFRASTRUCTURE 2025</h1>
-        <p class="intro card">I built this living landscape to make sense of the fast‑moving agentic infrastructure world—for myself and for anyone trying to ship real multi‑agent systems. My goal is to keep a clean, opinionated shortlist of the most up‑to‑date infrastructure, SDKs, models, and techniques that actually help you deliver: from core compute and foundation models, to orchestration frameworks, memory/vector databases, evaluation and observability, tool integrations, and distributed agent map‑reduce. If you're assembling an agentic stack today, start here. Kick the tires, compare trade‑offs, and choose tools that compound over time.</p>
+        <p class="intro card">I built this living landscape to make sense of the fast‑moving agentic infrastructure and LLMOps world—for myself and for anyone trying to ship real multi‑agent systems. My goal is to keep a clean, opinionated shortlist of the most up‑to‑date infrastructure, SDKs, models, and techniques that actually help you deliver: from core compute and foundation models, to orchestration frameworks, memory/vector databases, evaluation and observability, tool integrations, and distributed agent map‑reduce. This is your practical LLMOps toolkit for production agentic systems. If you're assembling an agentic stack today, start here. Kick the tires, compare trade‑offs, and choose tools that compound over time.</p>
     </div>
 
     <div class="landscape-grid" id="landscape"></div>
-    
-    <div id="mermaid-container">
-        <div id="mermaid-diagram"></div>
-    </div>
 
     <section id="resources" class="section resources">
         <h2 class="section-title">Articles and Materials</h2>
@@ -90,10 +79,9 @@
     </div>
 
     <!-- JavaScript modules - Load in dependency order -->
-    <script src="js/theme-manager.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/mermaid-diagram.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/landscape.js"></script>
+    <script src="js/theme-manager.js?v=2"></script>
+    <script src="js/modal.js?v=2"></script>
+    <script src="js/init.js?v=2"></script>
+    <script src="js/landscape.js?v=2"></script>
 </body>
 </html>
