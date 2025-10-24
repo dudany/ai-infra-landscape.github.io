@@ -1,69 +1,17 @@
 # AI Agents Infrastructure Landscape
 
+[![GitMCP](https://img.shields.io/endpoint?url=https://gitmcp.io/badge/dudany/ai-infra-landscape.github.io)](https://gitmcp.io/dudany/ai-infra-landscape.github.io)
+
 A comprehensive, interactive landscape of the AI agent infrastructure ecosystem for 2025.
 
-## Project Structure
+## Purpose
 
-```
-ai-infra-landscape.github.io/
-├── index.html              # Main HTML file
-├── styles.css              # All CSS styles
-├── data/
-│   ├── unified_landscape.json    # Main data file
-│   └── sample_data/              # Sample data files
-├── js/
-│   ├── init.js                   # Mermaid initialization
-│   ├── theme-manager.js          # Theme switching logic
-│   ├── landscape.js              # Landscape grid rendering
-│   ├── mermaid-diagram.js        # Architecture diagram generation
-│   └── modal.js                  # Modal window functionality
-└── README.md               # This file
-```
+This project helps you make fast, confident decisions about your agentic stack. It has two parts:
+- Visual, interactive landscape: explore families → categories → tools at a glance.
+- GitMCP integration: connect your MCP client to this repo, chat to research/compare, then jump into other projects’ docs (LangChain, LangGraph, vector DBs, eval tools, and more) via their GitMCP endpoints.
 
-## File Responsibilities
+Inspired by curated lists like [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps), but optimized for hands-on research with your IDE and an agent.
 
-### `index.html`
-- Main HTML structure
-- Header and intro content
-- Resources section
-- Modal markup
-- Script imports
-
-### `styles.css`
-- All CSS styling
-- Theme variables (dark/light modes)
-- Component styles (cards, modals, grids)
-- Responsive design rules
-
-### `js/init.js`
-- Mermaid library initialization
-- Icon pack registration
-- Theme manager instantiation
-
-### `js/theme-manager.js`
-- `ThemeManager` class
-- Theme switching logic (auto/light/dark)
-- LocalStorage persistence
-- Theme icon updates
-
-### `js/landscape.js`
-- Main landscape data loading
-- Hierarchy transformation
-- Grid rendering
-- Color generation for families/categories
-- Tool card creation
-
-### `js/mermaid-diagram.js`
-- Architecture diagram generation
-- Family and category icon mapping
-- View toggle functionality (Grid ↔ Diagram)
-- Mermaid code generation
-
-### `js/modal.js`
-- Tool detail modal
-- Modal open/close handlers
-- Keyboard shortcuts (ESC to close)
-- Click outside to close
 
 ## Features
 
@@ -78,6 +26,60 @@ ai-infra-landscape.github.io/
 
 To work on this project:
 
+## Use with GitMCP
+
+Connect your IDE/assistant to this repo to research the ecosystem directly:
+
+Cursor (`~/.cursor/mcp.json`):
+```json
+{
+  "mcpServers": {
+    "ai-infra-landscape.github.io Docs": {
+      "url": "https://gitmcp.io/dudany/ai-infra-landscape.github.io"
+    }
+  }
+}
+```
+
+After research, add implementation MCPs (example):
+```json
+{
+  "mcpServers": {
+    "langchain Docs": {
+      "url": "https://gitmcp.io/langchain-ai/langchain"
+    }
+  }
+}
+```
+
+See `docs/mcp.md` for more options and tips.
+
+## Add tools to the landscape
+
+Contributions welcome! Add entries to `data/tools_descriptions.json` under `tools[]`.
+
+Example item:
+```json
+{
+  "name": "MyTool",
+  "type": "open source sdk",
+  "family": ["Core Agent Infrastructure"],
+  "category": ["Agent Orchestration & Frameworks"],
+  "summary": "One-liner that explains what it does and why it matters.",
+  "docs_url": "https://example.com/docs",
+  "github_url": "https://github.com/example/mytool",
+  "icon_url": "https://example.com/favicon.ico",
+  "oss": true,
+  "vendor": "ExampleCo",
+  "notes": "Optional extra context",
+  "last_known_update": "2025-10-01"
+}
+```
+
+Guidelines:
+- Keep summaries short and comparison-friendly.
+- Prefer official docs and GitHub links.
+- Use existing `family` and `category` values so cards render in the right place.
 1. Edit the relevant file based on what you're changing:
    - Visual styles → `styles.css`
    - Theme behavior → `js/theme-manager.js`
@@ -87,7 +89,7 @@ To work on this project:
 
 2. Test locally by opening `index.html` in a browser
 
-3. Data is loaded from `data/unified_landscape.json`
+3. Data is loaded from `data/tools_descriptions.json` (includes `gitmcp_url` auto‑derived from `github_url`)
 
 ## Architecture Diagram
 

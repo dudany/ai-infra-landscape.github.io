@@ -1,0 +1,78 @@
+AI Agents Infrastructure Landscape — AI-optimized documentation for GitMCP
+
+Summary
+This project is a living, opinionated landscape of agentic infrastructure and LLMOps: orchestration frameworks, memory/vector databases, observability/evals, gateways, protocols, and compute. Use it to research options, compare trade‑offs, and plan architectures for agent workflows.
+
+How to Use with GitMCP
+- MCP URL for this repo: https://gitmcp.io/dudany/ai-infra-landscape.github.io
+- Typical flow:
+  1) Connect your MCP client to this repo.
+  2) Ask discovery/comparison questions to explore options for your agentic use case.
+  3) Get suggested next MCP servers (e.g., LangChain, LangGraph, vector DBs) to start building.
+
+Purpose of this file
+- This llms.txt is the AI‑optimized entrypoint for GitMCP and other agents. It summarizes the project and points to the canonical dataset used by the site.
+- For detailed, per‑tool data (including GitMCP endpoints), fetch `data/tools_descriptions.json`.
+
+Useful Prompts
+- "Summarize the families and categories covered here and what problems each solves."
+- "Given a workflow that needs stateful multi‑agent orchestration with human‑in‑the‑loop, which frameworks should I consider and why?"
+- "Compare Weaviate vs Qdrant vs Supabase pgvector for my RAG use case (cost, ops, ecosystem)."
+- "Recommend observability/evaluation tools for a LangGraph‑based agent in production."
+- "List relevant MCP servers to connect after research to begin implementation."
+
+What GitMCP Will Find Here
+- Prioritized doc: this llms.txt; fallback to README and site content
+- File map:
+  - index.html — main structure, header, resources section, modal container
+  - styles.css — themes, cards, grids, modal styles
+  - js/theme-manager.js — theme switching (auto/light/dark)
+  - js/init.js — bootstraps theme manager
+  - js/landscape.js — loads data/tools_descriptions.json, renders families→categories→tools grid
+  - js/modal.js — tool details modal behavior
+  - data/tools_descriptions.json — primary tools dataset powering the UI; includes gitmcp_url for repos
+  - js/mcp-section.js — (added) injects an MCP how-to section with examples
+  - data/mcp_servers.json — (added) curated next-step MCP servers
+
+Data Schema (data/tools_descriptions.json)
+- tools[]: array of tool objects with commonly used fields:
+  - name: string
+  - type: string (e.g., "open source sdk", "proprietary", "protocol")
+  - family: string[] (e.g., "Core Agent Infrastructure")
+  - category: string[] (e.g., "Agent Orchestration & Frameworks")
+  - summary: string (brief description)
+  - docs_url: string | null
+  - github_url: string | null
+  - gitmcp_url: string (auto-derived when github_url points to a GitHub repo)
+  - icon_url: string (optional)
+  - oss: boolean | string (some entries use true/false or "mixed")
+  - vendor, notes, last_known_update, license, maturity, enterprise_ready, recent_updates (optional metadata)
+- The UI groups by family, then category, and renders tool cards with icon, name, and normalized type label.
+
+MCP‑Oriented Q&A
+- Discover options: Ask about families/categories relevant to your use case (e.g., evals, memory, gateways, orchestration).
+- Compare tools: Ask for trade‑offs (operational complexity, ecosystem fit, licensing, maturity).
+- Architecture planning: Ask for a reference stack for your workload (e.g., LangGraph + vector DB + observability + gateway).
+- Next steps: Request a short list of MCP servers to connect for implementation (e.g., LangChain, LangGraph, LlamaIndex, Weaviate/Qdrant, Langfuse, Supabase).
+
+Recommended Follow‑up MCP Servers
+- LangChain: https://gitmcp.io/langchain-ai/langchain
+- LangGraph: https://gitmcp.io/langchain-ai/langgraph
+- LlamaIndex: https://gitmcp.io/run-llama/llama_index
+- Weaviate: https://gitmcp.io/weaviate/weaviate
+- Qdrant: https://gitmcp.io/qdrant/qdrant
+- Supabase: https://gitmcp.io/supabase/supabase
+- Langfuse: https://gitmcp.io/langfuse/langfuse
+
+Client Config Snippet (example)
+{
+  "mcpServers": {
+    "ai-infra-landscape.github.io Docs": {
+      "url": "https://gitmcp.io/dudany/ai-infra-landscape.github.io"
+    }
+  }
+}
+
+Notes
+- This site is client‑side only; no server required. Content is static but updated regularly via the dataset.
+- Prefer the families/categories to zoom into the domain you care about, then dive into individual tools and linked docs.

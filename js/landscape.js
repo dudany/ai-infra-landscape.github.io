@@ -73,9 +73,19 @@ function formatTypeLabel(normalized) {
 
 function loadLandscapeData() {
     const container = document.getElementById('landscape');
-    fetch('data/unified_landscape.json', { cache: 'no-store' })
-        .then(response => response.json())
-        .then(data => {
+
+    function loadJson(url) {
+        return fetch(url, { cache: 'no-store' }).then((response) => {
+            if (!response.ok) {
+                throw new Error('HTTP ' + response.status + ' for ' + url);
+            }
+            return response.json();
+        });
+    }
+
+    loadJson('data/tools_descriptions.json')
+        .catch(() => loadJson('data/unified_landscape.json'))
+        .then((data) => {
             landscapeData = transformToHierarchy(data.tools);
             renderLandscape();
         })
