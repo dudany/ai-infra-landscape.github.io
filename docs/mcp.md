@@ -40,7 +40,10 @@ Add additional MCP servers to start building based on your chosen stack:
 ```
 More examples: LangGraph, LlamaIndex, Weaviate, Qdrant, Supabase, Langfuse.
 
+## Where MCP endpoints come from
+Discover MCP endpoints directly in `data/tools_descriptions.json` under each tool's `gitmcp_url`. This dataset is the single source of truth; no separate curated list is maintained.
+
 ## Tips
-- Ask comparison questions across families/categories.
+- Ask comparison questions across layers/components.
 - Request a suggested stack for your workflow (framework + memory + observability + gateway).
 - Then connect the recommended MCPs above and implement.

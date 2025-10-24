@@ -1,34 +1,27 @@
 # AI Agents Infrastructure Landscape
 
-[![GitMCP](https://img.shields.io/endpoint?url=https://gitmcp.io/badge/dudany/ai-infra-landscape.github.io)](https://gitmcp.io/dudany/ai-infra-landscape.github.io)
+A living, opinionated landscape to help you choose and ship agentic stacks.
+This repo captures the 2025 landscape of agent infrastructure and LLMOps tools so you can keep up with what's real, why it exists, and how it fits together. Browse the space, see each tool's purpose, whether it's OSS or commercial, and jump straight to docs/GitHub. Use it to pick a stack, compare options, and move from research to implementation quickly.
 
-A comprehensive, interactive landscape of the AI agent infrastructure ecosystem for 2025.
+Inspired by curated lists like [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps), but optimized for hands‑on research with your MCP Client or IDE.
 
-## Purpose
+## Quick Start
 
-This project helps you make fast, confident decisions about your agentic stack. It has two parts:
-- Visual, interactive landscape: explore families → categories → tools at a glance.
-- GitMCP integration: connect your MCP client to this repo, chat to research/compare, then jump into other projects’ docs (LangChain, LangGraph, vector DBs, eval tools, and more) via their GitMCP endpoints.
+View the interactive landscape: [dudany.github.io/ai-infra-landscape.github.io](https://dudany.github.io/ai-infra-landscape.github.io/)
 
-Inspired by curated lists like [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps), but optimized for hands-on research with your IDE and an agent.
+Or query this repo from your IDE/assistant via MCP—see [Connect via GitMCP](#connect-via-gitmcp) below.
 
+Then ask your assistant questions like: "Compare LangGraph vs CrewAI for stateful agents" or "Recommend a stack for RAG with strict PII access."
 
 ## Features
 
-- **Dual View Modes**: Toggle between grid view and architecture diagram
-- **Theme Support**: Auto/Light/Dark theme switching
-- **Hierarchical Organization**: Families → Categories → Tools
-- **Color-Coded**: Each family has its own color scheme
-- **Interactive**: Click tools for detailed information
-- **Responsive**: Works on desktop and mobile
+- **Browse via UI**: Explore layers → components → tools at [dudany.github.io/ai-infra-landscape.github.io](https://dudany.github.io/ai-infra-landscape.github.io/), open a tool to view a concise summary plus links (docs, GitHub, GitMCP where available).
+- **Query via MCP**: Connect this dataset to your IDE/assistant to compare tools, filter by needs, and jump to external docs without leaving your editor.
 
-## Development
 
-To work on this project:
+## Connect via GitMCP
 
-## Use with GitMCP
-
-Connect your IDE/assistant to this repo to research the ecosystem directly:
+Use GitMCP to let your IDE/assistant read this repo’s docs and dataset while you research. Thanks to GitMCP, you can query this repo via MCP.
 
 Cursor (`~/.cursor/mcp.json`):
 ```json
@@ -36,6 +29,21 @@ Cursor (`~/.cursor/mcp.json`):
   "mcpServers": {
     "ai-infra-landscape.github.io Docs": {
       "url": "https://gitmcp.io/dudany/ai-infra-landscape.github.io"
+    }
+  }
+}
+```
+
+Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+```json
+{
+  "mcpServers": {
+    "ai-infra-landscape.github.io Docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/dudany/ai-infra-landscape.github.io"
+      ]
     }
   }
 }
@@ -52,7 +60,7 @@ After research, add implementation MCPs (example):
 }
 ```
 
-See `docs/mcp.md` for more options and tips.
+More tips and examples in `docs/mcp.md`.
 
 ## Add tools to the landscape
 
@@ -63,8 +71,8 @@ Example item:
 {
   "name": "MyTool",
   "type": "open source sdk",
-  "family": ["Core Agent Infrastructure"],
-  "category": ["Agent Orchestration & Frameworks"],
+  "layer": ["Agent Runtime"],
+  "component": ["Agent Orchestration & Frameworks"],
   "summary": "One-liner that explains what it does and why it matters.",
   "docs_url": "https://example.com/docs",
   "github_url": "https://github.com/example/mytool",
@@ -79,28 +87,14 @@ Example item:
 Guidelines:
 - Keep summaries short and comparison-friendly.
 - Prefer official docs and GitHub links.
-- Use existing `family` and `category` values so cards render in the right place.
+- Use existing `layer` and `component` values so cards render in the right place.
 1. Edit the relevant file based on what you're changing:
    - Visual styles → `styles.css`
    - Theme behavior → `js/theme-manager.js`
    - Grid layout/rendering → `js/landscape.js`
-   - Diagram view → `js/mermaid-diagram.js`
    - Tool modals → `js/modal.js`
 
 2. Test locally by opening `index.html` in a browser
 
 3. Data is loaded from `data/tools_descriptions.json` (includes `gitmcp_url` auto‑derived from `github_url`)
-
-## Architecture Diagram
-
-The architecture diagram uses Mermaid's `architecture-beta` syntax with:
-- Grouped hierarchies (families as groups)
-- Relevant icons for each service
-- Nested category services within family groups
-
-## Browser Support
-
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Requires JavaScript enabled
-- Uses CSS Grid and Flexbox
 

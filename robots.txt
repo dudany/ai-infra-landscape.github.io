@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-# Purpose: This site hosts an AI Agents Infrastructure Landscape.
+# Purpose: This site hosts an AI Agents Infrastructure and LLMops Landscape.
 # For AI assistants/GitMCP: primary docs are in llms.txt
 # Dataset: data/tools_descriptions.json (tool metadata with gitmcp_url per repo)

@@ -119,9 +119,9 @@
         "Vector Databases & Knowledge Stores"
       ],
       "summary": "Scalable open-source vector DB for decentralized agents.",
-      "docs_url": "https://milvus.io/docs",
-      "github_url": "https://github.com/milvus-io/milvus",
-      "gitmcp_url": "https://gitmcp.io/milvus-io/milvus",
+      "docs_url": "https://docs.trychroma.com/",
+      "github_url": "https://github.com/chroma-core/chroma",
+      "gitmcp_url": "https://gitmcp.io/chroma-core/chroma",
       "icon_url": "https://www.trychroma.com/favicon.ico",
       "oss": true,
       "vendor": "Community",

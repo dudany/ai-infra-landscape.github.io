@@ -43,8 +43,8 @@ function openModal(tool) {
 
     document.getElementById('modal-name').textContent = name;
 
-    const categories = Array.isArray(tool.category) ? tool.category.join(', ') : (tool.category || '');
-    const families = Array.isArray(tool.family) ? tool.family.join(', ') : (tool.family || '');
+    const components = Array.isArray(tool.component) ? tool.component.join(', ') : (tool.component || '');
+    const layers = Array.isArray(tool.layer) ? tool.layer.join(', ') : (tool.layer || '');
 
     const normalizeType = (t) => {
         const raw = (t || '').toLowerCase();
@@ -56,8 +56,8 @@ function openModal(tool) {
 
     let descHtml = '';
     descHtml += `<strong>Type:</strong> ${normalizeType(tool.type)}<br>`;
-    if (families) descHtml += `<strong>Family:</strong> ${families}<br>`;
-    if (categories) descHtml += `<strong>Category:</strong> ${categories}<br>`;
+    if (layers) descHtml += `<strong>Layer:</strong> ${layers}<br>`;
+    if (components) descHtml += `<strong>Component:</strong> ${components}<br>`;
     if (tool.license) descHtml += `<strong>License:</strong> ${tool.license}<br>`;
     if (tool.vendor) descHtml += `<strong>Vendor:</strong> ${tool.vendor}<br>`;
     if (tool.last_known_update) descHtml += `<strong>Updated:</strong> ${tool.last_known_update}<br>`;

@@ -1,4 +1,4 @@
-AI Agents Infrastructure Landscape — AI-optimized documentation for GitMCP
+AI Agents Infrastructure and LLMops Landscape — AI-optimized documentation for GitMCP
 
 Summary
 This project is a living, opinionated landscape of agentic infrastructure and LLMOps: orchestration frameworks, memory/vector databases, observability/evals, gateways, protocols, and compute. Use it to research options, compare trade‑offs, and plan architectures for agent workflows.
@@ -15,24 +15,45 @@ Purpose of this file
 - For detailed, per‑tool data (including GitMCP endpoints), fetch `data/tools_descriptions.json`.
 
 Useful Prompts
-- "Summarize the families and categories covered here and what problems each solves."
+- "Summarize the layers and components covered here and what problems each solves."
 - "Given a workflow that needs stateful multi‑agent orchestration with human‑in‑the‑loop, which frameworks should I consider and why?"
 - "Compare Weaviate vs Qdrant vs Supabase pgvector for my RAG use case (cost, ops, ecosystem)."
 - "Recommend observability/evaluation tools for a LangGraph‑based agent in production."
 - "List relevant MCP servers to connect after research to begin implementation."
+- "Propose an OSS‑only starter stack for a TypeScript agent (runtime, memory, observability, gateway)."
+- "Compare LangGraph vs CrewAI vs Mastra Agents for long‑running, checkpointed workflows with retries."
+- "I need RAG with strict PII access and audit logs—suggest DB + identity + gateway options."
+- "Select an MCP‑aware gateway with auth, rate limits, and tracing (Envoy AI Gateway vs Kong vs LiteLLM vs Portkey)."
+- "Pick a vector DB for 100k docs with hybrid search and low ops overhead."
+- "Recommend eval/observability for a Python stack: Langfuse vs Arize Phoenix vs Datadog LLM Observability."
+- "Design a low‑latency inference path: vLLM vs TGI vs Triton; when to add KServe or Ray Serve."
+- "Optimize context costs: when to use LLMLingua compression vs restructuring retrieval."
+- "Constrained tool I/O: how to enforce JSON schemas (Outlines or model‑side constraints)."
+- "Memory for multi‑agent teams: Mem0 vs native framework memory; trade‑offs and patterns."
+- "Prefer serverless or scale‑to‑zero: pick components accordingly (e.g., Pinecone Serverless, Neon)."
+- "On‑prem constraints: propose a fully OSS stack that runs on Kubernetes."
+- "Identity and access for agents: Auth0/Okta vs OSS (Zitadel, Ory) and how to integrate with tools."
+- "Enterprise MCP identity/context management—when to use Webrix vs DIY with gateway policies."
+- "Compare Weaviate vs Qdrant vs Pinecone for multi‑tenant isolation and cost controls."
+- "High‑throughput generation with KV cache: vLLM tuning basics and when to shard."
+- "GPU cluster setup for finetuning: NVIDIA GPU Operator + Ray/TorchTune/Unsloth choices."
+- "Fine‑tuning path for Llama 3.x: Axolotl vs TorchTune vs Unsloth; when to avoid finetuning."
+- "Observability standards: how to adopt OpenTelemetry GenAI across runtime, gateway, and evals."
+- "Suggest a reference stack for agent + RAG + evals + gateway for a small team shipping in 2 weeks."
+- "After picking a stack, list the exact MCP servers to connect to start building."
 
 What GitMCP Will Find Here
 - Prioritized doc: this llms.txt; fallback to README and site content
 - Important Files map:
   - data/tools_descriptions.json — primary tools dataset powering the UI; includes gitmcp_url for repos
-  - data/mcp_servers.json — (added) curated next-step MCP servers
+  - Note: MCP endpoints should be discovered from each tool's `gitmcp_url` in this dataset
 
 Data Schema (data/tools_descriptions.json)
 - tools[]: array of tool objects with commonly used fields:
   - name: string
   - type: string (e.g., "open source sdk", "proprietary", "protocol")
-  - family: string[] (e.g., "Core Agent Infrastructure")
-  - category: string[] (e.g., "Agent Orchestration & Frameworks")
+  - layer: string[] (e.g., "Agent Runtime")
+  - component: string[] (e.g., "Agent Orchestration & Frameworks")
   - summary: string (brief description)
   - docs_url: string | null
   - github_url: string | null
@@ -40,10 +61,10 @@ Data Schema (data/tools_descriptions.json)
   - icon_url: string (optional)
   - oss: boolean | string (some entries use true/false or "mixed")
   - vendor, notes, last_known_update, license, maturity, enterprise_ready, recent_updates (optional metadata)
-- The UI groups by family, then category, and renders tool cards with icon, name, and normalized type label.
+- The UI groups by layer, then component, and renders tool cards with icon, name, and normalized type label.
 
 MCP‑Oriented Q&A
-- Discover options: Ask about families/categories relevant to your use case (e.g., evals, memory, gateways, orchestration).
+- Discover options: Ask about layers/components relevant to your use case (e.g., evals, memory, gateways, orchestration).
 - Compare tools: Ask for trade‑offs (operational complexity, ecosystem fit, licensing, maturity).
 - Architecture planning: Ask for a reference stack for your workload (e.g., LangGraph + vector DB + observability + gateway).
 - Next steps: Request a short list of MCP servers to connect for implementation (e.g., LangChain, LangGraph, LlamaIndex, Weaviate/Qdrant, Langfuse, Supabase).
@@ -68,4 +89,4 @@ Client Config Snippet (example)
 
 Notes
 - This site is client‑side only; no server required. Content is static but updated regularly via the dataset.
-- Prefer the families/categories to zoom into the domain you care about, then dive into individual tools and linked docs.
+- Prefer the layers/components to zoom into the domain you care about, then dive into individual tools and linked docs.
