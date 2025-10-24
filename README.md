@@ -5,6 +5,8 @@ This repo captures the 2025 landscape of agent infrastructure and LLMOps tools s
 
 Inspired by curated lists like [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps), but optimized for hands‑on research with your MCP Client or IDE.
 
+
+
 ## Quick Start
 
 View the interactive landscape: [dudany.github.io/ai-infra-landscape.github.io](https://dudany.github.io/ai-infra-landscape.github.io/)
@@ -12,6 +14,11 @@ View the interactive landscape: [dudany.github.io/ai-infra-landscape.github.io](
 Or query this repo from your IDE/assistant via MCP—see [Connect via GitMCP](#connect-via-gitmcp) below.
 
 Then ask your assistant questions like: "Compare LangGraph vs CrewAI for stateful agents" or "Recommend a stack for RAG with strict PII access."
+
+[![AI Infra Landscape](landscape-screenshot.png)](https://dudany.github.io/ai-infra-landscape.github.io/)
+
+*Click the image above to explore the interactive landscape or visit the [live site](https://dudany.github.io/ai-infra-landscape.github.io/)*
+
 
 ## Features
 
