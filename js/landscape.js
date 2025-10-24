@@ -53,7 +53,7 @@ function normalizeType(tool) {
         'Qdrant',
         'Milvus / Zilliz',
         'Helicone',
-        'LangGraph (LangChain v1 runtime)',
+        'LangGraph',
         'LlamaIndex Agents'
     ]);
     if (tool.oss === true && (ossHostedNames.has(tool.name) ||

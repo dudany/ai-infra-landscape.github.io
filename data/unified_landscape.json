@@ -51,18 +51,18 @@
       ]
     },
     {
-      "name": "Auth0 (OIDC/OAuth2)",
+      "name": "Auth0 (AI Agents Auth)",
       "type": "proprietary",
       "category": [
         "Authentication"
       ],
-      "summary": "Managed OIDC/OAuth platform with SDKs, social logins, rules/actions.",
-      "docs_url": "https://auth0.com/docs/authenticate/protocols/openid-connect-protocol",
+      "summary": "Enterprise auth platform purpose-built for AI agents with Token Vault for API credentials, asynchronous authorization, fine-grained access control for RAG, and MCP support. Enables secure agent-to-tool access with user identity, persistent memory, and human-in-the-loop approvals.",
+      "docs_url": "https://auth0.com/ai",
       "github_url": null,
-      "icon_url": "https://auth0.com/favicon.ico",
+      "icon_url": "https://avatars.githubusercontent.com/u/2824157?s=200&v=4",
       "oss": false,
       "vendor": "Okta",
-      "notes": "Fastest path for SaaS auth.",
+      "notes": "Fastest path for production AI agent auth. Token Vault + async authorization + FGA for RAG + MCP support.",
       "last_known_update": "2025-10-01",
       "family": [
         "Security, Identity & Access"
@@ -78,7 +78,7 @@
       "docs_url": "https://microsoft.github.io/autogen/stable/",
       "doc_link": "https://microsoft.github.io/autogen/",
       "github_url": "https://github.com/microsoft/autogen",
-      "icon_url": "https://raw.githubusercontent.com/microsoft/autogen/main/website/static/img/autogen-icon.png",
+      "icon_url": "https://avatars.githubusercontent.com/u/6154722?s=48&v=4",
       "oss": true,
       "vendor": "Microsoft",
       "notes": "Migration path from AutoGen to Agent Framework. 2025 AG2 release for end-to-end automation.",
@@ -99,7 +99,7 @@
       "summary": "Popular finetuning stack for Llama/Mistral/etc., supports SFT, DPO, and compression.",
       "docs_url": "https://github.com/axolotl-ai-cloud/axolotl",
       "github_url": "https://github.com/axolotl-ai-cloud/axolotl",
-      "icon_url": "https://raw.githubusercontent.com/axolotl-ai-cloud/axolotl/main/icon.png",
+      "icon_url": "https://avatars.githubusercontent.com/u/167502477?s=48&v=4",
       "oss": true,
       "vendor": "Community",
       "notes": "Used widely for rapid experiments.",
@@ -177,7 +177,7 @@
       "summary": "Low-code visual builder for building customized LLM flows and AI agents with drag-and-drop interface. Supports LangChain integration and provides ready-to-use templates for rapid prototyping.",
       "docs_url": "https://docs.flowiseai.com/",
       "github_url": "https://github.com/FlowiseAI/Flowise",
-      "icon_url": "https://raw.githubusercontent.com/FlowiseAI/Flowise/main/packages/ui/public/flowise_icon.svg",
+      "icon_url": "https://flowiseai.com/favicon.ico",
       "oss": true,
       "vendor": "FlowiseAI",
       "notes": "Popular for no-code/low-code agent building. Good for rapid prototyping and demos.",
@@ -245,7 +245,7 @@
       ]
     },
     {
-      "name": "HashiCorp Vault (Secrets)",
+      "name": "HashiCorp Vault (Secrets for Agents)",
       "type": "open source sdk",
       "category": [
         "Authentication"
@@ -253,7 +253,7 @@
       "summary": "Secrets management (API keys, tokens, certs) with audit logs; dynamic creds.",
       "docs_url": "https://developer.hashicorp.com/vault/tutorials/secrets-management",
       "github_url": "https://github.com/hashicorp/vault",
-      "icon_url": "https://www.vaultproject.io/favicon.ico",
+      "icon_url": "https://avatars.githubusercontent.com/u/761456?s=200&v=4",
       "oss": true,
       "vendor": "HashiCorp",
       "notes": "Back MCP tool creds with Vault/KMS.",
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "name": "LangGraph (LangChain v1 runtime)",
+      "name": "LangGraph",
       "type": "open source sdk",
       "category": [
         "Agent Orchestration & Frameworks"
@@ -347,6 +347,48 @@
       "vendor": "LangChain",
       "notes": "Prefer explicit graphs over opaque loops for prod. 2025 enhancements for retries in production.",
       "last_known_update": "2025-07-01",
+      "maturity": "production",
+      "enterprise_ready": true,
+      "license": "MIT",
+      "family": [
+        "Core Agent Infrastructure"
+      ]
+    },
+    {
+      "name": "LangChain",
+      "type": "open source sdk",
+      "category": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Comprehensive framework for developing applications powered by LLMs with modular components for chains, tools, memory, and RAG. Standardized abstractions and extensive integrations for building complex AI-driven workflows.",
+      "docs_url": "https://python.langchain.com/docs/",
+      "github_url": "https://github.com/langchain-ai/langchain",
+      "icon_url": "https://avatars.githubusercontent.com/u/126733545?s=200&v=4",
+      "oss": true,
+      "vendor": "LangChain",
+      "notes": "Foundation for many agent frameworks. Large ecosystem of integrations and community support.",
+      "last_known_update": "2025-09-01",
+      "maturity": "production",
+      "enterprise_ready": true,
+      "license": "MIT",
+      "family": [
+        "Core Agent Infrastructure"
+      ]
+    },
+    {
+      "name": "DeepAgents",
+      "type": "open source sdk",
+      "category": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Advanced agent library built on LangGraph for complex multi-step tasks. Includes planning, task decomposition, subagent spawning, and virtual file system for context management.",
+      "docs_url": "https://docs.langchain.com/oss/python/deepagents/overview",
+      "github_url": "https://github.com/langchain-ai/deepagents",
+      "icon_url": "https://avatars.githubusercontent.com/u/126733545?s=200&v=4",
+      "oss": true,
+      "vendor": "LangChain",
+      "notes": "Sophisticated agent capabilities with planning and context isolation through subagents. Built on proven LangGraph foundation.",
+      "last_known_update": "2025-09-01",
       "maturity": "production",
       "enterprise_ready": true,
       "license": "MIT",
@@ -471,6 +513,27 @@
       ]
     },
     {
+      "name": "Mastra Agents",
+      "type": "open source sdk",
+      "category": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "TypeScript framework for building stateful AI agents with built-in memory, MCP support, tool calling, and observability. Features agent primitives, long-term and working memory, human-in-the-loop controls, and security guardrails. Deploy locally or to Mastra Cloud.",
+      "docs_url": "https://mastra.ai/agents",
+      "github_url": "https://github.com/mastra-ai/mastra",
+      "icon_url": "https://mastra.ai/favicon.ico",
+      "oss": true,
+      "vendor": "Mastra",
+      "notes": "Modern TypeScript-first agent framework. Integrates with any LLM. Deploy to cloud or self-host.",
+      "last_known_update": "2025-10-01",
+      "maturity": "production",
+      "enterprise_ready": true,
+      "license": "MIT",
+      "family": [
+        "Core Agent Infrastructure"
+      ]
+    },
+    {
       "name": "Mem0",
       "type": "open source sdk",
       "category": [
@@ -501,6 +564,43 @@
       "vendor": "LF AI & Data / Zilliz",
       "notes": "Roadmap toward 3.0.",
       "last_known_update": "2025-10-01",
+      "family": [
+        "Memory, Knowledge & Context"
+      ]
+    },
+    {
+      "name": "Supabase",
+      "type": "open source sdk",
+      "category": [
+        "Vector Databases & Knowledge Stores"
+      ],
+      "summary": "Open-source Firebase alternative with PostgreSQL backend supporting pgvector for vector embeddings. Provides real-time database, authentication, storage, and vector search for AI applications.",
+      "docs_url": "https://supabase.com/docs/guides/ai",
+      "github_url": "https://github.com/supabase/supabase",
+      "icon_url": "https://supabase.com/favicon.ico",
+      "oss": true,
+      "vendor": "Supabase",
+      "notes": "pgvector-enabled PostgreSQL. Unified backend with auth, storage, and vector search for AI agents.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Memory, Knowledge & Context"
+      ]
+    },
+    {
+      "name": "Neon",
+      "type": "proprietary",
+      "category": [
+        "Vector Databases & Knowledge Stores"
+      ],
+      "summary": "Serverless PostgreSQL platform with pgvector support and autoscaling. Enables vector embeddings, similarity search, and dynamic scaling for AI workloads with instant database branching.",
+      "docs_url": "https://neon.tech/docs/introduction",
+      "github_url": null,
+      "icon_url": "https://neon.tech/favicon.ico",
+      "oss": false,
+      "vendor": "Neon",
+      "notes": "Serverless PostgreSQL with pgvector. Auto-scaling and branching for AI applications and rapid experimentation.",
+      "last_known_update": "2025-10-01",
+      "enterprise_ready": true,
       "family": [
         "Memory, Knowledge & Context"
       ]
@@ -570,7 +670,7 @@
       "docs_url": "https://github.com/openai/openai-agents-python",
       "doc_link": "https://openai.github.io/openai-agents-python/",
       "github_url": "https://github.com/openai/openai-agents-python",
-      "icon_url": "https://raw.githubusercontent.com/openai/openai-agents-python/main/icon.png",
+      "icon_url": "https://avatars.githubusercontent.com/u/14957082?s=48&v=4",
       "oss": true,
       "vendor": "OpenAI",
       "notes": "Evolution of Swarm; integrates with gateways.",
@@ -610,7 +710,7 @@
       "docs_url": "https://platform.openai.com/docs/api-reference",
       "github_url": null,
       "oss": false,
-      "icon_url": "https://ih1.redbubble.net/image.4930908270.4452/st,small,507x507-pad,600x600,f8f8f8.jpg",
+      "icon_url": "https://avatars.githubusercontent.com/u/14957082?s=48&v=4",
       "vendor": "OpenAI",
       "notes": "Most widely adopted LLM API. Supports assistants API, fine-tuning, and DALL-E image generation.",
       "last_known_update": "2025-10-01",
@@ -704,6 +804,25 @@
       "vendor": "Ory",
       "notes": "Use with Ory Kratos for identities.",
       "last_known_update": "2025-09-30",
+      "family": [
+        "Security, Identity & Access"
+      ]
+    },
+    {
+      "name": "Descope",
+      "type": "proprietary",
+      "category": [
+        "Authentication"
+      ],
+      "summary": "No-code authentication and user management platform with drag-and-drop workflows. Supports passwordless auth (magic links, passkeys), social logins, MFA, SSO, and tenant management. SDKs and APIs for B2B/B2C applications.",
+      "docs_url": "https://docs.descope.com/",
+      "github_url": "https://github.com/descope-io",
+      "icon_url": "https://www.descope.com/favicon.ico",
+      "oss": false,
+      "vendor": "Descope",
+      "notes": "Developer-friendly with no-code workflows. Good for rapid auth implementation in agents and applications.",
+      "last_known_update": "2025-10-01",
+      "enterprise_ready": true,
       "family": [
         "Security, Identity & Access"
       ]
@@ -855,6 +974,24 @@
       ]
     },
     {
+      "name": "Mastra Observability",
+      "type": "open source sdk",
+      "category": [
+        "Monitoring & Observability"
+      ],
+      "summary": "Built-in logging, tracing, and evaluation primitives for agent performance monitoring. Observe and evaluate agent behavior with structured traces, execution logs, and performance metrics.",
+      "docs_url": "https://mastra.ai/agents",
+      "github_url": "https://github.com/mastra-ai/mastra",
+      "icon_url": "https://mastra.ai/favicon.ico",
+      "oss": true,
+      "vendor": "Mastra",
+      "notes": "Integrated with Mastra agents for native observability. Trace execution, logs, and evals in one platform.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Observability, Control & Evaluation"
+      ]
+    },
+    {
       "name": "Unsloth",
       "type": "open source sdk",
       "category": [
@@ -863,7 +1000,7 @@
       "summary": "Toolkit for efficient LoRA finetuning/inference optimizations for Llama-family models.",
       "docs_url": "https://github.com/unslothai/unsloth",
       "github_url": "https://github.com/unslothai/unsloth",
-      "icon_url": "https://raw.githubusercontent.com/unslothai/unsloth/main/icon.png",
+      "icon_url": "https://avatars.githubusercontent.com/u/150920049?s=48&v=4",
       "oss": true,
       "vendor": "UnslothAI",
       "notes": "Strong perf on consumer GPUs.",
@@ -899,11 +1036,30 @@
       "summary": "Open-source IAM with OIDC, OAuth2, SAML, SCIM; multi-tenant and cloud/OSS options.",
       "docs_url": "https://zitadel.com/docs/guides/overview",
       "github_url": "https://github.com/zitadel/zitadel",
-      "icon_url": "https://zitadel.com/favicon.ico",
+      "icon_url": "https://avatars.githubusercontent.com/u/70011121?s=48&v=4",
       "oss": true,
       "vendor": "Zitadel",
       "notes": "Good self-hosted Auth0 alternative.",
       "last_known_update": "2025-10-17",
+      "family": [
+        "Security, Identity & Access"
+      ]
+    },
+    {
+      "name": "Webrix",
+      "type": "proprietary",
+      "category": [
+        "MCP Identity Management"
+      ],
+      "summary": "Secure MCP Gateway for enterprise identity and context management. Enables AI agents to securely connect to internal systems and SaaS with SSO, role-based access control, real-time context injection, and governance controls.",
+      "docs_url": "https://docs.webrix.ai/",
+      "github_url": null,
+      "icon_url": "https://webrix.ai/favicon.ico",
+      "oss": false,
+      "vendor": "Webrix",
+      "notes": "MCP-based identity gateway for enterprises. Secure agent integrations with context and access control.",
+      "last_known_update": "2025-10-01",
+      "enterprise_ready": true,
       "family": [
         "Security, Identity & Access"
       ]
@@ -927,6 +1083,24 @@
       ]
     },
     {
+      "name": "Mastra RAG",
+      "type": "open source sdk",
+      "category": [
+        "Vector Databases & Knowledge Stores"
+      ],
+      "summary": "RAG capabilities for providing semantic context to AI agents. Integrated retrieval system for connecting agents to knowledge bases with security and access controls built-in.",
+      "docs_url": "https://mastra.ai/agents",
+      "github_url": "https://github.com/mastra-ai/mastra",
+      "icon_url": "https://mastra.ai/favicon.ico",
+      "oss": true,
+      "vendor": "Mastra",
+      "notes": "Built-in RAG in Mastra agents. Semantic search with security guardrails for enterprise data access.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Memory, Knowledge & Context"
+      ]
+    },
+    {
       "name": "vLLM",
       "type": "open source sdk",
       "category": [
@@ -936,7 +1110,7 @@
       "docs_url": "https://docs.vllm.ai/en/latest/",
       "github_url": "https://github.com/vllm-project/vllm",
       "oss": true,
-      "icon_url": "https://docs.vllm.ai/favicon.ico",
+      "icon_url": "https://docs.vllm.ai/en/latest/assets/logos/vllm-logo-only-light.ico",
       "vendor": "vLLM Project",
       "notes": "Backbone for many KServe/Ray deployments.",
       "last_known_update": "2025-08-01",
@@ -990,7 +1164,7 @@
       "docs_url": "https://github.com/ollama/ollama",
       "github_url": "https://github.com/ollama/ollama",
       "oss": true,
-      "icon_url": "https://raw.githubusercontent.com/ollama/ollama/main/docs/ollama.png",
+      "icon_url": "https://avatars.githubusercontent.com/u/151674099?s=48&v=4",
       "vendor": "Ollama",
       "notes": "Popular for local development and testing. Simple model management and cross-platform support.",
       "last_known_update": "2025-10-01",
@@ -1008,6 +1182,7 @@
       "docs_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/",
       "github_url": "https://github.com/triton-inference-server/server",
       "oss": true,
+      "icon_url": "https://www.nvidia.com/favicon.ico",
       "vendor": "NVIDIA",
       "notes": "Production-grade serving for ML models. Supports concurrent model execution and multi-model serving.",
       "last_known_update": "2025-09-01",
@@ -1034,6 +1209,24 @@
       "license": "GPL-3.0",
       "family": [
         "Core Agent Infrastructure"
+      ]
+    },
+    {
+      "name": "Mastra Workflows",
+      "type": "open source sdk",
+      "category": [
+        "Compute & Inference"
+      ],
+      "summary": "Orchestrate complex multi-step agent processes with Mastra Cloud. Compose agents with durable workflows, execution control flow, and deploy to production with built-in reliability and monitoring.",
+      "docs_url": "https://mastra.ai/workflows",
+      "github_url": "https://github.com/mastra-ai/mastra",
+      "icon_url": "https://mastra.ai/favicon.ico",
+      "oss": true,
+      "vendor": "Mastra",
+      "notes": "Deploy Mastra agents to cloud with workflows. Durable execution with retries, human-in-the-loop, and multi-agent orchestration.",
+      "last_known_update": "2025-10-01",
+      "family": [
+        "Compute, Infrastructure & Scaling"
       ]
     }
   ]
