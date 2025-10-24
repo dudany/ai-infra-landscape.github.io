@@ -1,7 +1,7 @@
 let landscapeData = null;
 
-const FAMILY_COLORS = {
-    'Core Agent Infrastructure': '#ef4444',
+const LAYER_COLORS = {
+    'Agent Runtime': '#ef4444',
     'Observability, Control & Evaluation': '#3b82f6',
     'Memory, Knowledge & Context': '#10b981',
     'Compute, Infrastructure & Scaling': '#f59e0b',
@@ -116,19 +116,19 @@ function transformToHierarchy(tools) {
     const hierarchy = {};
     
     tools.forEach(tool => {
-        const families = tool.family || ['Uncategorized'];
-        const categories = tool.category || ['General'];
+        const layers = tool.layer || ['Uncategorized'];
+        const components = tool.component || ['General'];
         
-        families.forEach(family => {
-            if (!hierarchy[family]) {
-                hierarchy[family] = {};
+        layers.forEach(layer => {
+            if (!hierarchy[layer]) {
+                hierarchy[layer] = {};
             }
             
-            categories.forEach(category => {
-                if (!hierarchy[family][category]) {
-                    hierarchy[family][category] = [];
+            components.forEach(component => {
+                if (!hierarchy[layer][component]) {
+                    hierarchy[layer][component] = [];
                 }
-                hierarchy[family][category].push(tool);
+                hierarchy[layer][component].push(tool);
             });
         });
     });
@@ -140,36 +140,36 @@ function renderLandscape() {
     const container = document.getElementById('landscape');
     container.innerHTML = '';
     
-    Object.entries(landscapeData).forEach(([family, categories]) => {
-        const familyDiv = document.createElement('div');
-        familyDiv.className = 'family-section';
-        const baseColor = FAMILY_COLORS[family] || '#6b7280';
-        familyDiv.style.borderColor = baseColor;
+    Object.entries(landscapeData).forEach(([layer, components]) => {
+        const layerDiv = document.createElement('div');
+        layerDiv.className = 'layer-section';
+        const baseColor = LAYER_COLORS[layer] || '#6b7280';
+        layerDiv.style.borderColor = baseColor;
         
-        const familyHeader = document.createElement('div');
-        familyHeader.className = 'family-header';
-        familyHeader.style.borderLeftColor = baseColor;
-        familyHeader.style.color = baseColor;
-        familyHeader.textContent = family;
-        familyDiv.appendChild(familyHeader);
+        const layerHeader = document.createElement('div');
+        layerHeader.className = 'layer-header';
+        layerHeader.style.borderLeftColor = baseColor;
+        layerHeader.style.color = baseColor;
+        layerHeader.textContent = layer;
+        layerDiv.appendChild(layerHeader);
         
-        const categoryCount = Object.keys(categories).length;
-        const categoryShades = generateColorShades(baseColor, Math.max(1, categoryCount));
+        const componentCount = Object.keys(components).length;
+        const componentShades = generateColorShades(baseColor, Math.max(1, componentCount));
         
-        const categoryGrid = document.createElement('div');
-        categoryGrid.className = 'category-grid';
+        const componentGrid = document.createElement('div');
+        componentGrid.className = 'component-grid';
         
-        Object.entries(categories).forEach(([category, tools], catIndex) => {
-            const categoryCard = document.createElement('div');
-            categoryCard.className = 'category-card';
-            categoryCard.style.borderColor = categoryShades[catIndex];
-            categoryCard.style.backgroundColor = `${categoryShades[catIndex]}15`;
+        Object.entries(components).forEach(([component, tools], compIndex) => {
+            const componentCard = document.createElement('div');
+            componentCard.className = 'component-card';
+            componentCard.style.borderColor = componentShades[compIndex];
+            componentCard.style.backgroundColor = `${componentShades[compIndex]}15`;
             
-            const categoryTitle = document.createElement('div');
-            categoryTitle.className = 'category-title';
-            categoryTitle.style.color = categoryShades[catIndex];
-            categoryTitle.textContent = category;
-            categoryCard.appendChild(categoryTitle);
+            const componentTitle = document.createElement('div');
+            componentTitle.className = 'component-title';
+            componentTitle.style.color = componentShades[compIndex];
+            componentTitle.textContent = component;
+            componentCard.appendChild(componentTitle);
             
             const toolsGrid = document.createElement('div');
             toolsGrid.className = 'tools-grid';
@@ -178,7 +178,7 @@ function renderLandscape() {
             tools.forEach(tool => {
                 const toolCard = document.createElement('div');
                 toolCard.className = 'tool-card';
-                toolCard.style.borderColor = categoryShades[catIndex];
+                toolCard.style.borderColor = componentShades[compIndex];
                 toolCard.onclick = () => openModal(tool);
                 
                 const icon = createToolIconElement(tool);
@@ -198,12 +198,12 @@ function renderLandscape() {
                 toolsGrid.appendChild(toolCard);
             });
             
-            categoryCard.appendChild(toolsGrid);
-            categoryGrid.appendChild(categoryCard);
+            componentCard.appendChild(toolsGrid);
+            componentGrid.appendChild(componentCard);
         });
         
-        familyDiv.appendChild(categoryGrid);
-        container.appendChild(familyDiv);
+        layerDiv.appendChild(componentGrid);
+        container.appendChild(layerDiv);
     });
 }
 

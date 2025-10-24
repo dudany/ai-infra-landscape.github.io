@@ -190,7 +190,7 @@ body {
     }
 }
 
-.family-section {
+.layer-section {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -200,7 +200,7 @@ body {
     background: var(--bg-tertiary);
 }
 
-.family-header {
+.layer-header {
     font-size: 16px;
     font-weight: 700;
     color: var(--accent-color);
@@ -211,13 +211,13 @@ body {
     font-family: 'Space Grotesk', 'Inter', sans-serif;
 }
 
-.category-grid {
+.component-grid {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.category-card {
+.component-card {
     background: var(--bg-secondary);
     border: 1px solid;
     border-radius: 10px;
@@ -229,12 +229,12 @@ body {
     width: 100%;
 }
 
-.category-card:hover {
+.component-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px var(--shadow-color);
 }
 
-.category-title {
+.component-title {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -488,5 +488,57 @@ body {
     padding: 20px;
     color: var(--text-muted);
     font-size: 12px;
+}
+
+.mcp-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    justify-content: center;
+}
+
+.mcp-tab {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mcp-tab-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.mcp-tab:hover {
+    background: var(--bg-tertiary);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.mcp-tab.active {
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
+.mcp-tab-content {
+    display: none;
+}
+
+.mcp-tab-content.active {
+    display: block;
 }
 

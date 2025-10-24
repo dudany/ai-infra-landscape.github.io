@@ -23,15 +23,8 @@ Useful Prompts
 
 What GitMCP Will Find Here
 - Prioritized doc: this llms.txt; fallback to README and site content
-- File map:
-  - index.html — main structure, header, resources section, modal container
-  - styles.css — themes, cards, grids, modal styles
-  - js/theme-manager.js — theme switching (auto/light/dark)
-  - js/init.js — bootstraps theme manager
-  - js/landscape.js — loads data/tools_descriptions.json, renders families→categories→tools grid
-  - js/modal.js — tool details modal behavior
+- Important Files map:
   - data/tools_descriptions.json — primary tools dataset powering the UI; includes gitmcp_url for repos
-  - js/mcp-section.js — (added) injects an MCP how-to section with examples
   - data/mcp_servers.json — (added) curated next-step MCP servers
 
 Data Schema (data/tools_descriptions.json)
