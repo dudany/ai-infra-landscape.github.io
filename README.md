@@ -104,3 +104,4 @@ Guidelines:
 
 3. Data is loaded from `data/tools_descriptions.json` (includes `gitmcp_url` auto‑derived from `github_url`)
 
+<!-- Test comment for branch protection -->
