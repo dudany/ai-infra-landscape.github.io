@@ -1,9 +1,9 @@
 # AI Agents Infrastructure Landscape
 
 Awesome, living curated landscape of agentic llm ops and stacks.
-This repo captures the 2025 landscape of agent coding, infrastructure and LLMOps tools so you can keep up with what's real, why it exists, and how it fits together. Browse the space, see each tool's purpose, whether it's OSS or commercial, and jump straight to docs/GitHub. Use it to pick a stack, compare options, and move from research to implementation quickly.
+Talk directly with this repository through your chat using MCP - query, compare tools, and research from your IDE or AI assistant. This repo captures the 2025 landscape of agent coding, infrastructure and LLMOps tools so you can keep up with what's real, why it exists, and how it fits together. Browse the interactive UI to see each tool's purpose, whether it's OSS or commercial, and jump straight to docs/GitHub. Or connect via MCP to pick a stack, compare options, and move from research to implementation without leaving your editor.
 
-Inspired by curated lists, but optimized for hands‑on research with your MCP Client or IDE.
+Inspired by curated lists, but built for hands-on research with your MCP Client or IDE.
 
 
 ## Quick Start
@@ -103,6 +103,28 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete guide, field description
   "license": "MIT"
 }
 ```
+
+## Development
+
+To run this repo locally:
+
+```bash
+npx http-server -p 8000
+```
+
+Then open `http://localhost:8000` in your browser.
+
+### Making Changes
+
+1. Edit the relevant file based on what you're changing:
+   - Visual styles → `styles.css`
+   - Theme behavior → `js/theme-manager.js`
+   - Grid layout/rendering → `js/landscape.js`
+   - Tool modals → `js/modal.js`
+
+2. Test locally by opening `index.html` in a browser or using the http-server command above
+
+3. Data is loaded from `data/tools_descriptions.json` (includes `gitmcp_url` auto-derived from `github_url`)
 
 ## License
 
