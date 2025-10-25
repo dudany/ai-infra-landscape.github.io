@@ -68,32 +68,41 @@ After research, add implementation MCPs (example):
 
 More tips and examples in `docs/mcp.md`.
 
-## Add tools to the landscape
+## Contributing
 
-Contributions welcome! Add entries to `data/tools_descriptions.json` under `tools[]`.
+Contributions are welcome! We'd love your help making this landscape more comprehensive and useful.
 
-Example item:
+### How to Contribute
+
+To add a new tool, update existing entries, or improve the project:
+
+1. Read the [Contributing Guide](CONTRIBUTING.md) for detailed instructions
+2. Fork this repository and clone your fork
+3. Add your tool entry to `data/tools_descriptions.json`
+4. Test locally by opening `index.html` in a browser
+5. Push to your fork and submit a pull request
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete guide, field descriptions, and guidelines.
+
+### Quick Example
+
 ```json
 {
   "name": "MyTool",
   "type": "open source sdk",
   "layer": ["Agent Runtime"],
   "component": ["Agent Orchestration & Frameworks"],
-  "summary": "One-liner that explains what it does and why it matters.",
+  "summary": "Clear description of what this tool does and why it matters.",
   "docs_url": "https://example.com/docs",
   "github_url": "https://github.com/example/mytool",
   "icon_url": "https://example.com/favicon.ico",
   "oss": true,
   "vendor": "ExampleCo",
-  "notes": "Optional extra context",
-  "last_known_update": "2025-10-01"
+  "notes": "Additional context or use cases",
+  "last_known_update": "2025-10-25",
+  "license": "MIT"
 }
 ```
-
-Guidelines:
-- Keep summaries short and comparison-friendly.
-- Prefer official docs and GitHub links.
-- Use existing `layer` and `component` values so cards render in the right place.
 
 ## Development
 
@@ -116,4 +125,8 @@ Then open `http://localhost:8000` in your browser.
 2. Test locally by opening `index.html` in a browser or using the http-server command above
 
 3. Data is loaded from `data/tools_descriptions.json` (includes `gitmcp_url` auto-derived from `github_url`)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
