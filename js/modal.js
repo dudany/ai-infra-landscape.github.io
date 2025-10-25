@@ -1,3 +1,19 @@
+// Create a GitHub star badge from a GitHub URL
+function createStarBadge(githubUrl) {
+    if (!githubUrl) return null;
+    const match = githubUrl.match(/github\.com\/([^\/]+)\/([^\/\?#]+)/);
+    if (!match) return null;
+    
+    const owner = match[1];
+    const repo = match[2];
+    
+    const img = document.createElement('img');
+    img.className = 'star-badge';
+    img.src = `https://img.shields.io/github/stars/${owner}/${repo}?style=flat-square&logo=github&labelColor=333&color=blue`;
+    img.alt = `${owner}/${repo} stars`;
+    return img;
+}
+
 function openModal(tool) {
     const name = tool.name || 'Unknown';
     const summary = tool.summary || 'No description available';
@@ -61,7 +77,11 @@ function openModal(tool) {
     if (tool.license) descHtml += `<strong>License:</strong> ${tool.license}<br>`;
     if (tool.vendor) descHtml += `<strong>Vendor:</strong> ${tool.vendor}<br>`;
     if (tool.last_known_update) descHtml += `<strong>Updated:</strong> ${tool.last_known_update}<br>`;
-    if (tool.github_url) descHtml += `<strong>GitHub:</strong> <a href="${tool.github_url}" target="_blank">${tool.github_url}</a><br>`;
+    if (tool.github_url) {
+        const starBadge = createStarBadge(tool.github_url);
+        const badgeHtml = starBadge ? `<img src="${starBadge.src}" alt="stars" style="height: 18px; vertical-align: middle; margin-left: 8px;">` : '';
+        descHtml += `<strong>GitHub:</strong> <a href="${tool.github_url}" target="_blank">${tool.github_url}</a>${badgeHtml}<br>`;
+    }
     if (tool.docs_url) descHtml += `<strong>Docs:</strong> <a href="${tool.docs_url}" target="_blank">${tool.docs_url}</a><br>`;
     descHtml += `<br><p>${summary}</p>`;
     if (tool.notes) descHtml += `<p><em>${tool.notes}</em></p>`;

@@ -9,6 +9,22 @@ const LAYER_COLORS = {
     'Real-Time & Async Operations': '#ec4899'
 };
 
+// Create a GitHub star badge from a GitHub URL
+function createStarBadge(githubUrl) {
+    if (!githubUrl) return null;
+    const match = githubUrl.match(/github\.com\/([^\/]+)\/([^\/\?#]+)/);
+    if (!match) return null;
+    
+    const owner = match[1];
+    const repo = match[2];
+    
+    const img = document.createElement('img');
+    img.className = 'star-badge';
+    img.src = `https://img.shields.io/github/stars/${owner}/${repo}?style=flat-square&logo=github&labelColor=333&color=blue`;
+    img.alt = `${owner}/${repo} stars`;
+    return img;
+}
+
 // Compute an icon from explicit icon_url or fallback to site favicon; also support icon_emoji
 function createToolIconElement(tool) {
     if (tool.icon_emoji) {
@@ -192,9 +208,16 @@ function renderLandscape() {
                 const norm = normalizeType(tool);
                 toolType.textContent = formatTypeLabel(norm);
                 
+                const starBadge = createStarBadge(tool.github_url);
+                if (starBadge) {
+                    starBadge.style.marginTop = '4px';
+                    starBadge.style.height = '16px';
+                }
+                
                 toolCard.appendChild(icon);
                 toolCard.appendChild(toolName);
                 toolCard.appendChild(toolType);
+                if (starBadge) toolCard.appendChild(starBadge);
                 
                 toolsGrid.appendChild(toolCard);
             });

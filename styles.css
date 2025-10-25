@@ -601,3 +601,13 @@ body {
     fill: #f59e0b;
 }
 
+.star-badge {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.star-badge:hover {
+    opacity: 1;
+}

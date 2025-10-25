@@ -8,7 +8,7 @@
       "grok_data.json",
       "preplexity_ai_agent_ecosystem_2025.json"
     ],
-    "total_entries": 54,
+    "total_entries": 55,
     "version": "1.4"
   },
   "tools": [
@@ -1259,6 +1259,28 @@
       "maturity": "production",
       "enterprise_ready": false,
       "license": "GPL-3.0",
+      "layer": [
+        "Agent Runtime"
+      ]
+    },
+    {
+      "name": "smolagents",
+      "type": "open source sdk",
+      "component": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Lightweight Python library for building AI agents with code-first approach. Agents generate and execute Python code for actions, achieving 30% fewer steps and superior performance on complex benchmarks. Features minimal abstractions with ~1,000 lines of core logic.",
+      "docs_url": "https://huggingface.co/docs/smolagents/",
+      "github_url": "https://github.com/huggingface/smolagents",
+      "gitmcp_url": "https://gitmcp.io/huggingface/smolagents",
+      "icon_url": "https://huggingface.co/favicon.ico",
+      "oss": true,
+      "vendor": "Hugging Face",
+      "notes": "Model-agnostic with LLM integrations (OpenAI, Anthropic, HF Hub). Supports MCP servers, LangChain tools, and sandboxed execution with E2B. Hub integration for sharing agents as Gradio Spaces.",
+      "last_known_update": "2025-10-01",
+      "maturity": "production",
+      "enterprise_ready": false,
+      "license": "Apache-2.0",
       "layer": [
         "Agent Runtime"
       ]
