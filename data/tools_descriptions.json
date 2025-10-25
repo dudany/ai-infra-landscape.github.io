@@ -603,7 +603,7 @@
       "docs_url": "https://supabase.com/docs/guides/ai",
       "github_url": "https://github.com/supabase/supabase",
       "gitmcp_url": "https://gitmcp.io/supabase/supabase",
-      "icon_url": "https://supabase.com/favicon.ico",
+      "icon_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAJ1BMVEVHcEwcHBwcHBwcHBw+0Y8bDhU6w4YztHordVMtom4rlGUkXUIfMyoXLO1bAAAAA3RSTlMA5lXpUzXPAAAAn0lEQVQokX3TURLDIAgEUKOAgtz/vEVjWmPF/X2Ds6MYQrzSNlcMIe6pJQZnrs8G31J6IaKPWMRFrEAuKh0wg4vIYKhbxAINrXDPC61Mx2opFp1wGJAIcyYCwR9a0TuGecFepk8yN4Q8HYsyELoRKc6FysiNdWk7Is3Kc//Lk7VB+b7NHxJv73ZM6gEVXSx1XoYF33tyXrDjah6X+vQdPlqdC6DXXwriAAAAAElFTkSuQmCC",
       "oss": true,
       "vendor": "Supabase",
       "notes": "pgvector-enabled PostgreSQL. Unified backend with auth, storage, and vector search for AI agents.",
