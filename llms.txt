@@ -1,4 +1,4 @@
-AI Agents Infrastructure and LLMops Landscape — AI-optimized documentation for GitMCP
+AI Agents Infrastructure and LLMops Landscape - AI-optimized documentation for GitMCP
 
 Summary
 This project is a living, opinionated landscape of agentic infrastructure and LLMOps: orchestration frameworks, memory/vector databases, observability/evals, gateways, protocols, and compute. Use it to research options, compare trade‑offs, and plan architectures for agent workflows.
@@ -22,7 +22,7 @@ Useful Prompts
 - "List relevant MCP servers to connect after research to begin implementation."
 - "Propose an OSS‑only starter stack for a TypeScript agent (runtime, memory, observability, gateway)."
 - "Compare LangGraph vs CrewAI vs Mastra Agents for long‑running, checkpointed workflows with retries."
-- "I need RAG with strict PII access and audit logs—suggest DB + identity + gateway options."
+- "I need RAG with strict PII access and audit logs-suggest DB + identity + gateway options."
 - "Select an MCP‑aware gateway with auth, rate limits, and tracing (Envoy AI Gateway vs Kong vs LiteLLM vs Portkey)."
 - "Pick a vector DB for 100k docs with hybrid search and low ops overhead."
 - "Recommend eval/observability for a Python stack: Langfuse vs Arize Phoenix vs Datadog LLM Observability."
@@ -33,7 +33,7 @@ Useful Prompts
 - "Prefer serverless or scale‑to‑zero: pick components accordingly (e.g., Pinecone Serverless, Neon)."
 - "On‑prem constraints: propose a fully OSS stack that runs on Kubernetes."
 - "Identity and access for agents: Auth0/Okta vs OSS (Zitadel, Ory) and how to integrate with tools."
-- "Enterprise MCP identity/context management—when to use Webrix vs DIY with gateway policies."
+- "Enterprise MCP identity/context management-when to use Webrix vs DIY with gateway policies."
 - "Compare Weaviate vs Qdrant vs Pinecone for multi‑tenant isolation and cost controls."
 - "High‑throughput generation with KV cache: vLLM tuning basics and when to shard."
 - "GPU cluster setup for finetuning: NVIDIA GPU Operator + Ray/TorchTune/Unsloth choices."
@@ -45,7 +45,7 @@ Useful Prompts
 What GitMCP Will Find Here
 - Prioritized doc: this llms.txt; fallback to README and site content
 - Important Files map:
-  - data/tools_descriptions.json — primary tools dataset powering the UI; includes gitmcp_url for repos
+  - data/tools_descriptions.json - primary tools dataset powering the UI; includes gitmcp_url for repos
   - Note: MCP endpoints should be discovered from each tool's `gitmcp_url` in this dataset
 
 Data Schema (data/tools_descriptions.json)

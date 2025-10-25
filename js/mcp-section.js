@@ -227,7 +227,7 @@
     section.appendChild(createTitle('MCP for building agents'));
 
     section.appendChild(createParagraphCard(
-      'Connect your MCP-enabled IDE/assistant to this documentation to research and plan your agentic architecture. Choose your client below:'
+      'Connect your MCP-enabled IDE/assistant to this documentation to research and plan your agentic architecture. Choose your client below - connecting this GitMCP server to your client will help you to research faster, compare and start coding your project faster by connecting the other GitMCPs of each GitHub project.'
     ));
 
     section.appendChild(createTabs());

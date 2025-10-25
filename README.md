@@ -1,17 +1,16 @@
 # AI Agents Infrastructure Landscape
 
-A living, opinionated landscape to help you choose and ship agentic stacks.
-This repo captures the 2025 landscape of agent infrastructure and LLMOps tools so you can keep up with what's real, why it exists, and how it fits together. Browse the space, see each tool's purpose, whether it's OSS or commercial, and jump straight to docs/GitHub. Use it to pick a stack, compare options, and move from research to implementation quickly.
+Awesome, living curated landscape of agentic llm ops and stacks.
+This repo captures the 2025 landscape of agent coding, infrastructure and LLMOps tools so you can keep up with what's real, why it exists, and how it fits together. Browse the space, see each tool's purpose, whether it's OSS or commercial, and jump straight to docs/GitHub. Use it to pick a stack, compare options, and move from research to implementation quickly.
 
-Inspired by curated lists like [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps), but optimized for hands‑on research with your MCP Client or IDE.
-
+Inspired by curated lists, but optimized for hands‑on research with your MCP Client or IDE.
 
 
 ## Quick Start
 
 View the interactive landscape: [dudany.github.io/ai-infra-landscape.github.io](https://dudany.github.io/ai-infra-landscape.github.io/)
 
-Or query this repo from your IDE/assistant via MCP—see [Connect via GitMCP](#connect-via-gitmcp) below.
+Or query this repo from your IDE/assistant via MCP-see [Connect via GitMCP](#connect-via-gitmcp) below.
 
 Then ask your assistant questions like: "Compare LangGraph vs CrewAI for stateful agents" or "Recommend a stack for RAG with strict PII access."
 

@@ -195,6 +195,7 @@ function renderLandscape() {
                 toolCard.appendChild(icon);
                 toolCard.appendChild(toolName);
                 toolCard.appendChild(toolType);
+                
                 toolsGrid.appendChild(toolCard);
             });
             
