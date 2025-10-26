@@ -1,7 +1,7 @@
 # AI Agents Infrastructure Landscape
 
 Awesome, living curated landscape of agentic llm ops and stacks.
-Talk directly with this repository through your chat using MCP - query, compare tools, and research from your IDE or AI assistant. This repo captures the 2025 landscape of agent coding, infrastructure and LLMOps tools so you can keep up with what's real, why it exists, and how it fits together. Browse the interactive UI to see each tool's purpose, whether it's OSS or commercial, and jump straight to docs/GitHub. Or connect via MCP to pick a stack, compare options, and move from research to implementation without leaving your editor.
+Talk directly with this repository through your [chat using MCP](https://dudany.github.io/ai-infra-landscape.github.io/#mcp) - query, compare tools, and research from your IDE or AI assistant. This repo captures the 2025 landscape of agent coding, infrastructure and LLMOps tools so you can keep up with what's real, why it exists, and how it fits together. Browse the interactive UI to see each tool's purpose, whether it's OSS or commercial, and jump straight to docs/GitHub. Or connect via MCP to pick a stack, compare options, and move from research to implementation without leaving your editor.
 
 Inspired by curated lists, but built for hands-on research with your MCP Client or IDE.
 
