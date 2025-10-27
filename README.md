@@ -12,7 +12,19 @@ View the interactive landscape: [dudany.github.io/ai-infra-landscape.github.io](
 
 Or query this repo from your IDE/assistant via MCP-see [Connect via GitMCP](#connect-via-gitmcp) below.
 
-Then ask your assistant questions like: "Compare LangGraph vs CrewAI for stateful agents" or "Recommend a stack for RAG with strict PII access."
+**Example prompts to try:**
+
+```
+Which agent observability tools are available and what can I use for production monitoring?
+```
+
+```
+What are the best GPU cloud options for deploying open source LLMs?
+```
+
+```
+Compare vector database options for RAG with filtering support.
+```
 
 [![AI Infra Landscape](landscape-screenshot.png)](https://dudany.github.io/ai-infra-landscape.github.io/)
 

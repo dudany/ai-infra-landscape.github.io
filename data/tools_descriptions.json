@@ -8,7 +8,7 @@
       "grok_data.json",
       "preplexity_ai_agent_ecosystem_2025.json"
     ],
-    "total_entries": 55,
+    "total_entries": 58,
     "version": "1.4"
   },
   "tools": [
@@ -30,6 +30,25 @@
       "recent_updates": "Google-launched 2025 for enterprise.",
       "layer": [
         "Agent Runtime"
+      ]
+    },
+    {
+      "name": "AgentOps",
+      "type": "open source sdk",
+      "component": [
+        "Monitoring & Observability"
+      ],
+      "summary": "Agent observability platform for tracing, debugging, and deploying reliable AI agents. Supports OpenAI, CrewAI, Autogen, and 400+ LLMs with visual event tracking, time travel debugging, cost tracking, and replay analytics.",
+      "docs_url": "https://docs.agentops.ai/",
+      "github_url": "https://github.com/AgentOps-AI/agentops",
+      "gitmcp_url": "https://gitmcp.io/AgentOps-AI/agentops",
+      "icon_url": "https://www.agentops.ai/favicon.ico",
+      "oss": true,
+      "vendor": "AgentOps",
+      "notes": "Native integrations with top agent frameworks. Free tier up to 5,000 events. Includes session replay and token cost monitoring.",
+      "last_known_update": "2025-10-01",
+      "layer": [
+        "Observability, Control & Evaluation"
       ]
     },
     {
@@ -68,6 +87,28 @@
       "last_known_update": "2025-10-01",
       "layer": [
         "Security, Identity & Access"
+      ]
+    },
+    {
+      "name": "AutoGPT",
+      "type": "open source sdk",
+      "component": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Autonomous AI agent framework for building self-directed agents that can perform complex tasks without human intervention. Features goal-based execution, internet access, memory management, and plugin system for extending capabilities.",
+      "docs_url": "https://docs.agpt.co/",
+      "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "gitmcp_url": "https://gitmcp.io/Significant-Gravitas/AutoGPT",
+      "icon_url": "https://avatars.githubusercontent.com/u/130738209?s=48&v=4",
+      "oss": true,
+      "vendor": "Significant Gravitas",
+      "notes": "Pioneer in autonomous agents. Includes AutoGPT Forge for building custom agents and benchmark suite for evaluation.",
+      "last_known_update": "2025-10-01",
+      "maturity": "production",
+      "enterprise_ready": false,
+      "license": "MIT",
+      "layer": [
+        "Agent Runtime"
       ]
     },
     {
@@ -252,6 +293,26 @@
       "last_known_update": "2025-06-01",
       "layer": [
         "Compute, Infrastructure & Scaling"
+      ]
+    },
+    {
+      "name": "Gumloop",
+      "type": "proprietary",
+      "component": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "AI-native automation platform for building and scheduling multi-step workflows and agents with drag-and-drop interface. Combines LLMs with APIs, web data, and files without coding. Visual workflow builder for automating complex business processes.",
+      "docs_url": "https://www.gumloop.com/blog/handbook",
+      "github_url": null,
+      "icon_url": "https://avatars.githubusercontent.com/u/133821906?s=48&v=4",
+      "oss": false,
+      "vendor": "Gumloop",
+      "notes": "No-code platform for building AI automation workflows. Good for business users and non-technical teams.",
+      "last_known_update": "2025-10-01",
+      "maturity": "production",
+      "enterprise_ready": false,
+      "layer": [
+        "Agent Runtime"
       ]
     },
     {
