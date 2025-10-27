@@ -222,6 +222,40 @@
   }
 
 
+  function createExamplePrompts() {
+    const container = document.createElement('div');
+    container.style.marginTop = '16px';
+    container.style.marginBottom = '16px';
+
+    const heading = document.createElement('div');
+    heading.style.fontWeight = '600';
+    heading.style.fontSize = '14px';
+    heading.style.marginBottom = '12px';
+    heading.style.color = 'var(--text-primary)';
+    heading.textContent = 'Example prompts to try:';
+    container.appendChild(heading);
+
+    const prompts = [
+      'Which agent observability tools are available and what can I use for production monitoring?',
+      'What are the best GPU cloud options for deploying open source LLMs?',
+      'Compare vector database options for RAG with filtering support.'
+    ];
+
+    prompts.forEach(prompt => {
+      const promptCard = document.createElement('div');
+      promptCard.className = 'card';
+      promptCard.style.marginTop = '8px';
+      promptCard.style.fontSize = '13px';
+      promptCard.style.fontFamily = 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
+      promptCard.style.color = 'var(--text-secondary)';
+      promptCard.style.padding = '12px';
+      promptCard.textContent = prompt;
+      container.appendChild(promptCard);
+    });
+
+    return container;
+  }
+
   function buildMcpSection() {
     const section = createSectionContainer();
     section.appendChild(createTitle('MCP for building agents'));
@@ -229,6 +263,8 @@
     section.appendChild(createParagraphCard(
       'Connect your MCP-enabled IDE/assistant to this documentation to research and plan your agentic architecture. Choose your client below - connecting this GitMCP server to your client will help you to research faster, compare and start coding your project faster by connecting the other GitMCPs of each GitHub project.'
     ));
+
+    section.appendChild(createExamplePrompts());
 
     section.appendChild(createTabs());
 
