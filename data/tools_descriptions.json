@@ -8,8 +8,8 @@
       "grok_data.json",
       "preplexity_ai_agent_ecosystem_2025.json"
     ],
-    "total_entries": 58,
-    "version": "1.4"
+    "total_entries": 60,
+    "version": "1.5"
   },
   "tools": [
     {
@@ -69,6 +69,28 @@
       "last_known_update": "2025-07-01",
       "layer": [
         "Observability, Control & Evaluation"
+      ]
+    },
+    {
+      "name": "Atomic Agents",
+      "type": "open source sdk",
+      "component": [
+        "Agent Orchestration & Frameworks"
+      ],
+      "summary": "Lightweight and modular framework for building AI agents with atomic, composable components. Emphasizes single-purpose reusable components built on Instructor and Pydantic for robust data validation. Provider-agnostic design supports multiple LLM providers with predictable schemas and production-ready error handling.",
+      "docs_url": "https://brainblend-ai.github.io/atomic-agents/",
+      "github_url": "https://github.com/BrainBlend-AI/atomic-agents",
+      "gitmcp_url": "https://gitmcp.io/BrainBlend-AI/atomic-agents",
+      "icon_url": "https://avatars.githubusercontent.com/u/176832213?s=48&v=4",
+      "oss": true,
+      "vendor": "BrainBlend AI",
+      "notes": "Modular design with focus on maintainability. Built on Instructor/Pydantic for type-safe agent development. Async support included.",
+      "last_known_update": "2025-10-01",
+      "maturity": "production",
+      "enterprise_ready": false,
+      "license": "MIT",
+      "layer": [
+        "Agent Runtime"
       ]
     },
     {
@@ -1322,6 +1344,28 @@
       "license": "GPL-3.0",
       "layer": [
         "Agent Runtime"
+      ]
+    },
+    {
+      "name": "SGLang",
+      "type": "open source sdk",
+      "component": [
+        "Compute & Inference"
+      ],
+      "summary": "High-performance serving framework for large language models and vision-language models. Features RadixAttention for prefix caching, zero-overhead CPU scheduler, prefill-decode disaggregation, speculative decoding, continuous batching, paged attention, and tensor/pipeline/expert/data parallelism. Supports extensive model types (Llama, Qwen, DeepSeek, Kimi, GLM, GPT, Gemma, Mistral) and hardware platforms (NVIDIA, AMD, Intel, Google TPU, Ascend NPU). Powers over 300,000 GPUs worldwide with trillions of tokens processed daily.",
+      "docs_url": "https://docs.sglang.ai/",
+      "github_url": "https://github.com/sgl-project/sglang",
+      "gitmcp_url": "https://gitmcp.io/sgl-project/sglang",
+      "icon_url": "https://avatars.githubusercontent.com/u/147780389?s=48&v=4",
+      "oss": true,
+      "vendor": "LMSYS (SGLang Project)",
+      "notes": "Deployed at scale by xAI, AMD, NVIDIA, Intel, LinkedIn, Cursor, and major cloud providers. De facto industry standard for LLM inference. Compatible with Hugging Face models and OpenAI APIs.",
+      "last_known_update": "2025-10-01",
+      "maturity": "production",
+      "enterprise_ready": true,
+      "license": "Apache-2.0",
+      "layer": [
+        "Compute, Infrastructure & Scaling"
       ]
     },
     {
